@@ -1,0 +1,36 @@
+@font-face {
+    src: url("../fonts/UniversNextArabic-Regular.otf");
+    font-family: UniversNextArabic;
+}
+@font-face {
+    src: url("../fonts/FFShamelFamily-SansOneBold.ttf");
+    font-family: SansOneBold;
+}
+@font-face {
+    src: url("../fonts/FFShamelFamily-SansOneBook.ttf");
+    font-family: SansOneBook;
+}
+@font-face {
+    src: url("../fonts/MYRIADPRO-REGULAR.OTF");
+    font-family: MyRiadpro;
+}
+@font-face {
+    src: url("../fonts/En/Stolzl-Bold.ttf");
+    font-family: StolzlBold;
+}
+@font-face {
+    src: url("../fonts/En/Stolzl-Light.ttf");
+    font-family: StolzlBook;
+}
+:root{
+    --BoldFont:StolzlBold;
+    --BookFont:StolzlBook;
+    --UniversNextArabic:UniversNextArabic;
+    --MyRiadpro:MyRiadpro
+}
+[dir="rtl"] body{
+    --BoldFont:SansOneBold;
+    --BookFont:SansOneBook;
+    --UniversNextArabic:UniversNextArabic;
+    --MyRiadpro:MyRiadpro
+}

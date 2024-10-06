@@ -1,0 +1,13 @@
+<svg id="Vector_Smart_Object" data-name="Vector Smart Object" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="17" viewBox="0 0 25 17">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_19" data-name="Rectangle 19" width="25" height="17" transform="translate(0 0)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_35" data-name="Group 35">
+    <g id="Group_34" data-name="Group 34" clip-path="url(#clip-path)">
+      <path id="Path_106" data-name="Path 106" d="M13.876,10.868A11.155,11.155,0,0,1,22.517.351c.387-.088.771-.191,1.153-.3.148-.041.321-.111.406.038.108.187-.044.333-.188.438-.4.293-.829.554-1.213.87a11.152,11.152,0,0,0-2.823,3.475c-.377.72-.31.857.5.956,3.03.369,4.672,3.3,4.643,5.7a5.944,5.944,0,0,1-4.879,5.425,5.716,5.716,0,0,1-5.939-3.8,8.038,8.038,0,0,1-.3-2.286" />
+      <path id="Path_107" data-name="Path 107" d="M10.19.011c.052.418-.232.548-.475.71A12.351,12.351,0,0,0,5.957,4.842c-.382.647-.276.872.474.975a5.6,5.6,0,0,1,4.458,7.034,5.782,5.782,0,0,1-5.614,4.132A5.434,5.434,0,0,1,.1,12.3c-.517-3.843.987-6.929,3.708-9.491a11.8,11.8,0,0,1,6.38-2.8" />
+    </g>
+  </g>
+</svg>
