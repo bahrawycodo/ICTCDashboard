@@ -94,6 +94,13 @@ if($(".ImagesScrolledSlider").length > 0){
         advanced:{autoExpandHorizontalScroll:true}
     });
 }
+if($("aside").length > 0){
+    $("aside").mCustomScrollbar({
+        axis:"y",
+        theme:"dark-3",
+        advanced:{autoExpandVerticalScroll:true}
+    });
+}
 if($(".custom-file-input2").length > 0){
     $.each($(".custom-file-input2"),function (){
         makeHeightSameAsWidth(this);
