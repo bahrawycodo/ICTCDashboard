@@ -202,13 +202,20 @@ header .LeftNav li.active ul{display:block;-webkit-animation: fadeIn 1000ms;anim
 header .LeftNav li ul li{ width: 100% !important;font-size: 0.8rem !important;border-bottom: 1px solid #ECF3F6;border-radius: 0 !important;}
 header .LeftNav li ul li a{text-decoration: none;color: #0033A0}
 header .LeftNav li ul li:last-child{border-bottom: none}
+
 /* End Header */
 /*  Start Main */
-main{margin-top: 100px;}
+main{margin-top: 100px;position: relative;}
+@media(max-width:767.9px){
+    main{margin-top: 150px}
+}
 /* End Main */
 /* Start Sidebar */
-aside{background: #fff;padding-right: 0 !important;padding-left: 0 !important;overflow-y: auto;transition: 0.3s ease-in-out;position: fixed;}
-aside.notActive{transform: translateX(100%);position: absolute}
+aside{background: #fff;padding-right: 0 !important;padding-left: 0 !important;overflow-y: auto;transition: 0.3s ease-in-out;position: fixed;z-index: 1}
+@media(max-width:767.9px){
+    aside{margin-top: -12px !important;}
+}
+aside.notActive{transform: translateX(100%);}
 aside ul li{list-style-type: none;}
 aside ul li a{text-decoration: none;color:#61748F;font-size: 0.8rem;display: flex;gap: 0.5rem;font-family: SansOneBold;padding: 15px;position: relative;margin: 10px 0;transition: 0.3s ease-in-out;}
 aside ul li a span{}
@@ -908,7 +915,7 @@ textarea.form-control.input{min-height: 90px}
 .custom-file-input .FileGroup{display: flex;}
 .custom-file-input .fileName{border: 2px solid #CED4DA;border-radius: 0 10px 10px 0;color: #4B4B4B;background: #fff;padding: 10px 15px;width:calc(100% - 110px)}
 .custom-file-input .chooseFile{border-radius: 10px 0 0 10px;background: #EFF2F7;padding: 10px 15px;width: 110px;text-align: center}
-.custom-file-input2{background: #C8CCD8;border: 2px solid #D1D7DD;border-radius: 10px;width: 100%;height: 50px;cursor:pointer;overflow: hidden;}
+.custom-file-input2{background: #C8CCD8;border: 2px solid #D1D7DD;border-radius: 10px;width: 100%;height: 50px;cursor:pointer;overflow: hidden;max-width: 120px;}
 .custom-file-input2 .FileGroup{display: flex;flex-direction: column;gap: 0.5rem;height: 100%;align-items: center;justify-content: center;}
 .custom-file-input2 .FileGroup i{color: #646C7A;font-size: 1.6rem;}
 .custom-file-input2 .FileGroup span{color: #3D3D3E;font-family:SansOneBook ;font-size: 0.8rem}
@@ -923,7 +930,7 @@ textarea.form-control.input{min-height: 90px}
 .ImagesScrolledSlider .Image img{height: 60px}
 .ImagesScrolledSlider .Image .delete{cursor: pointer;position: absolute;color: #EA7979;font-size: 20px;left: 10px;top: 0px}
 .mCS-dark-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background: #0033A0 !important;height: 5px;}
-.SiteLogoContainer .ImageContainer img{width: 100%;border: 2px solid #BABABA;border-radius: 20px;background: #F5FCFF;min-height: 70px}
+.SiteLogoContainer .ImageContainer img{width: 100%;border: 2px solid #BABABA;border-radius: 20px;background: #F5FCFF;min-height: 70px;max-width: 120px;}
 .SiteLogoContainer .fileUploadContainer{padding: 0 3%;}
 .SiteLogoContainer .fileUploadContainer h3{font-family: SansOneBold;font-size: 1rem;color: #323232}
 .SiteLogoContainer .fileUploadContainer p{font-family: SansOneBook;font-size: 0.9rem;color: #5C6177}
@@ -931,6 +938,7 @@ textarea.form-control.input{min-height: 90px}
 .Home .footer{background: #0033A0;padding-top: 40px; padding-bottom: 30px;border-radius: 0 0 25px 25px;margin-right: -20px;width: calc(100% + 40px);margin-left: -20px;padding: 40px 20px 30px 20px;}
 .Home .footer > .col-md-12{padding: 0}
 .Home .footer .footer-title{position: absolute;top: -25px;right: 50%;transform: translateX(50%);border: 2px solid #CACACC;border-radius: 20px;background: #fff;font-family: SansOneBold;font-size: 1rem;color: #5C6177;padding: 10px 20px;z-index: 1;}
+@media(max-width:767px){.Home .footer .footer-title{font-size: 0.8rem;}}
 .footer .SocialLinks .input-group{border-radius: 30px  10px 10px 30px;background: #fff;padding: 5px;margin-bottom: 15px;border: 2px solid #CECED0}
 .footer .SocialLinks .input-group .input-group-text{border-radius: 50% !important;;width: 40px;height: 40px;border: none;color: #fff;font-size: 1.2rem;background: #000;display: flex;justify-content: center;align-items: center}
 .footer .SocialLinks .input-group .form-control{border: 0;box-shadow: none;background: transparent;height: 40px;font-family: MyRiadpro;color: #6B6970;font-size:1rem;}

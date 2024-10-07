@@ -2,6 +2,17 @@ $(document).ready(function(){
     toggleSubmenu();
     handleSide();
 });
+function applyResponsiveBehavior() {
+    var windowWidth = $(window).width(); // Get the window's current width
+    if (windowWidth < 768) {
+        closeSide();
+    } else {
+        openSide();
+    }
+}
+$(document).ready(applyResponsiveBehavior);
+$(window).on('resize', applyResponsiveBehavior);
+
 function makeSameHeight(containerSelector) {
     let maxHeight = 0;
     $(containerSelector).find('.SameHeight').each(function() {
@@ -37,11 +48,21 @@ function toggleSubmenu() {
 function handleSide(){
     $("aside").height($(window).height()-$("header").height()-10);
     $(".NavToggle").on("click", function(e) {
-        $("aside").toggleClass("notActive");
-        $(".content").toggleClass("w-100");
+        sideToggle()
     })
 }
-
+function sideToggle(){
+    $("aside").toggleClass("notActive");
+    $(".content").toggleClass("w-100");
+}
+function closeSide(){
+    $("aside").addClass("notActive");
+    $(".content").addClass("w-100");
+}
+function openSide(){
+    $("aside").removeClass("notActive");
+    $(".content").removeClass("w-100");
+}
 function CreateTabs(containerSelector) {
     $(containerSelector).find('.tab-headers li').click(function() {
         $(this).addClass('active').siblings().removeClass('active');
