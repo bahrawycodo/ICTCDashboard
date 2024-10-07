@@ -228,7 +228,7 @@ aside ul li.hasSubmenu.active a:before{transform: rotate(180deg);}
 /* End Sidebar */
 
 /* Start Dashboard Content */
-main .content{padding: 20px;position: relative;margin-right: auto;}
+main .content{padding: 20px;position: relative;margin-right: auto;transition: all 0.3s ease-in-out;}
 /* Start Dashboard Counters */
 .DashboardCounters .card{
     background: rgba(0,51,160,1);
