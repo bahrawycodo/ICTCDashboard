@@ -94,6 +94,25 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group mb-2">
+                            <label class="form-label">اسم المؤسسة</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                                <input type="text" class="form-control input">
+                                <span class="input-group-text"><i class="fa-solid fa-calendar"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-2">
+                            <label class="form-label">اسم المؤسسة</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                                <input type="text" class="form-control input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-2">
                             <label class="form-label">الرسالة</label>
                             <textarea class="form-control input" ></textarea>
                         </div>
@@ -182,6 +201,7 @@
 <script src="assets/js/summernote.min.js"></script>
 <script src="assets/js/chart.js"></script>
 <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/sweetalert2.js"></script>
 
 <script src="assets/js/flatpickr.js"></script>
 <script src="assets/js/flatPicker-ar.js"></script>
@@ -222,13 +242,46 @@
     $(document).ready(function() {
         setTimeout(function() {
             $('#summernote').summernote({
-                placeholder: 'Hello stand alone ui',
+                placeholder: '',
                 tabsize: 2,
                 height: 120,
             });
         }, 500); // Delay by 500ms
     });
-
+$('.PrimaryBtn').on('click',function (){
+    const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+            confirmButton: "btn btn-success",
+            cancelButton: "btn btn-danger"
+        },
+        buttonsStyling: false
+    });
+    swalWithBootstrapButtons.fire({
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Yes, delete it!",
+        cancelButtonText: "No, cancel!",
+        reverseButtons: true
+    }).then((result) => {
+        if (result.isConfirmed) {
+            swalWithBootstrapButtons.fire({
+                title: "Deleted!",
+                text: "Your file has been deleted.",
+                icon: "success"
+            });
+        } else if (
+            /* Read more about handling dismissals below */
+            result.dismiss === Swal.DismissReason.cancel
+        ) {
+            swalWithBootstrapButtons.fire({
+                title: "Cancelled",
+                text: "Your imaginary file is safe :)",
+                icon: "error"
+            });
+        }
+    });})
 </script>
 </body>
 </html>

@@ -639,8 +639,36 @@ main .content{padding: 20px;position: relative;margin-right: auto;transition: al
     padding: .45rem .75rem;
     font-size: 0.8rem;
     border-radius: 10px;
-    color: #4B4B4B
+    color: #4B4B4B;
+    outline: none !important;
 }
+.input-group .input-group-text{
+    background: #fff;
+    color: #8C99AF;
+        border: 2px solid #CED4DA;
+}
+[dir="rtl"] .input-group >:first-child{
+    border-left: none;
+}
+[dir="rtl"] .input-group >:last-child{
+    border-right: none
+}
+.input-group{background: #fff;
+  border-radius: 10px;
+  border: 2px solid #CED4DA;}
+[dir="rtl"] .input-group > :not(:last-child):nth-child(2){border-right:none;border-left:none}
+
+[dir="rtl"] .input-group > :not(:last-child) {
+  border-radius: var(--bs-border-radius);
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+.input-group .input-group-text{position: relative;}
+.input-group .input-group-text:before{content:"";width: 2px;background:#8C99AF;height: 20px; position: absolute;top:calc(100% / 2 - 10px);   }
+[dir="rtl"] .input-group .input-group-text:first-child:before{left: 2px;}
+[dir="rtl"] .input-group .input-group-text:last-child:not(:first-child):before{right: 0}
+
+.input-group .input-group-text,.input-group .form-control.input {border: none !important;background: transparent !important;}
 textarea.form-control.input{min-height: 90px}
 .form-control::placeholder {
     color: #4B4B4B;
@@ -1052,6 +1080,6 @@ textarea.form-control.input{min-height: 90px}
 .footer .SocialLinks .input-group.linkedin .input-group-text{background:#0A66C2 }
 .footer .SocialLinks .input-group.whatsapp .input-group-text{background: #25D366}
 .footer .SocialLinks .input-group.youtube .input-group-text{background:#F70000 }
-
+.swal2-actions{gap: 1rem}
 
 /* End Home Page */
