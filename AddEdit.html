@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="assets/images/favicon.svg"/>
+
+    <title>ICTCs</title>
+    <link rel="stylesheet" href="assets/css/fontawesome.css"/>
+    <link rel="stylesheet" href="assets/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css"/>
+    <link rel="stylesheet" href="assets/css/flatpickr.min.css" />
+    <link rel="stylesheet" href="assets/css/summernote.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap-rtl.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+
+</head>
+<body>
+<header class="pb-2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-2 col-lg-3 col-md-3">
+                <div class="logo">
+                    <img src="assets/images/Logo.svg" alt="" class="ImgWhite"/>
+                </div>
+            </div>
+            <div class="col-xl-10 col-lg-9 col-md-9 d-flex align-items-center">
+                <div class="RightNav">
+                    <button class="NavToggle"><span></span><span></span><span></span></button>
+                    <div class="form-group search d-none d-lg-block">
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" class="form-control" placeholder="ابحث هنا">
+                        </div>
+                    </div>
+                </div>
+                <ul class="LeftNav">
+                    <li class="notification"><i class="fa-regular fa-bell"></i></li>
+                    <li class="language"><i class="fa-solid fa-language"></i></li>
+                    <li class="settings"><i class="fa-light fa-gear"></i></li>
+                    <li class="profile hasSubmenu">
+                        <i class="fa-light fa-circle-user"></i><span class="title">محمد أحمد</span>
+                        <ul>
+                            <li><a href="#">تعديل البيانات</a> </li>
+                            <li><a href="#">تسجيل الخروج</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container-fluid">
+        <div class="row d-flex">
+            <aside class="col-xl-2 col-lg-3 col-md-3">
+                <ul>
+                    <li> <a href="#" class="active"><i class="fa-solid fa-grid-2"></i> <span class="title">لوحة التحكم</span> </a></li>
+                    <li> <a href="#"><i class="fa-solid fa-house-chimney"></i> <span class="title">الصفحة الرئيسية</span> </a></li>
+                    <li> <a href="#"><i class="fa-solid fa-memo-pad"></i><span class="title">الخطة التدريبية</span> </a></li>
+                    <li class="hasSubmenu"> <a href="#"><i class="fa-solid fa-graduation-cap"></i> <span class="title">البرامج التدريبية</span></a>
+                        <ul>
+                            <li><a href="#"><span class="title">البرامج المميزة</span> </a></li>
+                            <li><a href="#"><span class="title">أحدث البرامج</span> </a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="#"><i class="fa-solid fa-bell"></i> <span class="title">الإشعارات</span> </a></li>
+                    <li> <a href="#"><i class="fa-solid fa-envelope"></i> <span class="title">الرسائل</span> </a></li>
+                    <li> <a href="#"><i class="fa-solid fa-user"></i> <span class="title">المستخدمين</span> </a></li>
+                    <li> <a href="#"><i class="fa-solid fa-right-from-bracket"></i> <span class="title">تسجيل الخروج</span> </a></li>
+                </ul>
+            </aside>
+            <section class="content col-xl-10 col-lg-9 col-md-9">
+                <div class="row">
+                    <div class="col-md-12 PageHeader">
+                        <h2 class="PageTitle">صفحة الإضافة والتعديل</h2>
+                        <div class="PageHeaderLinks">
+                            <a href="#" class="btn PrimaryBtn">اضافة</a>
+                            <a href="#" class="btn PrimaryBtn">حفظ</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group mb-2">
+                            <label class="form-label">اسم المؤسسة</label>
+                            <input type="text" class="form-control input">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-2">
+                            <label class="form-label">الرسالة</label>
+                            <textarea class="form-control input" ></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-2">
+                            <input type="text" class="form-control input" placeholder="الاسم">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-2">
+                            <textarea class="form-control input" placeholder="الاسم"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="custom-file-input">
+                            <div class="FileGroup">
+                                <span class="fileName">لم يتم اختيار ملف</span>
+                                <span class="chooseFile">اختر ملف</span>
+                            </div>
+                            <input type="file" style="display: none;">
+                        </div>
+                    </div>
+                    <div class=" col-md-6 mb-2">
+                        <div class="form-group">
+                            <div class="customSelect" id="TrainingCourseName">
+                                <select>
+                                    <option value="DigitalEnvironment">البيئة الرقمية</option>
+                                    <option value="DigitalEnvironment">البيئة الرقمية</option>
+                                    <option value="DigitalEnvironment">البيئة الرقمية</option>
+                                    <option value="DigitalEnvironment">البيئة الرقمية</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="form-group">
+                            <label class="form-label">تاريخ</label>
+                            <input type="text" class="form-control input flatDatePicker" data-provider="flatpickr" data-date-format="d M, Y" >
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="form-group">
+                            <label class="form-label">اختيار تاريخ متعدد</label>
+                            <input type="text" class="form-control input flatDateMultiPicker" data-provider="flatpickr" data-date-format="d M, Y" >
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="form-group">
+                            <label class="form-label">اختيار تاريخ من الي</label>
+                            <input type="text" class="form-control input flatDateRangePicker" data-provider="flatpickr" data-date-format="d M, Y" >
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="form-group">
+                            <label class="form-label">اختيار الوقت</label>
+                            <input type="text" class="form-control input flatTimePicker" data-provider="flatpickr" data-date-format="d M, Y" >
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="form-group">
+                            <label class="form-label">اختيار التاريخ</label>
+                            <input type="text" class="form-control input inlinePicker" data-provider="flatpickr" data-date-format="d M, Y" >
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="form-group">
+                            <label class="form-label">محرر النصوص</label>
+                            <div id="summernote"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</main>
+
+
+<footer>
+
+</footer>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/chart.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/summernote.min.js"></script>
+
+<script src="assets/js/flatpickr.js"></script>
+<script src="assets/js/flatPicker-ar.js"></script>
+<script src="assets/js/customselect.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+    $(".flatDatePicker").flatpickr({
+        "locale": "ar"  // locale for this instance only
+    });
+    $(".flatDateMultiPicker").flatpickr({
+        "locale": "ar" ,
+        "mode": "multiple",
+        "dateFormat": "Y-m-d",
+        "conjunction": " :: "
+    });
+    $(".flatDateRangePicker").flatpickr({
+        "locale": "ar" ,
+        "mode": "range",
+        "dateFormat": "Y-m-d",
+        "disable": [
+            function(date) {
+                // disable every multiple of 8
+                return !(date.getDate() % 8);
+            }
+        ]    });
+    $(".flatTimePicker").flatpickr({
+        "locale": "ar" ,
+        enableTime: true,
+            noCalendar: true,
+        dateFormat: "H:i",
+        time_24hr: false
+         });
+    $(".inlinePicker").flatpickr({
+        "locale": "ar" ,
+        inline:true
+         });
+    $('#summernote').summernote({
+        placeholder: 'Hello stand alone ui',
+        tabsize: 2,
+        height: 120,
+        toolbar: [
+            ['style', ['style']],
+            ['font', ['bold', 'underline', 'clear']],
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['table', ['table']],
+            ['insert', ['link', 'picture', 'video']],
+            ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+    });
+</script>
+</body>
+</html>

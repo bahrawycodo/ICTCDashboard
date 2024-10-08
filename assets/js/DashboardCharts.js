@@ -19,7 +19,7 @@ function loadChart(type, container, data, title = '') {
                     text: ''
                 },
                 centerText: {
-                    fontSize: '1em',     // Adjust font size here
+                    fontSize: '1em',     // Adjust summernote size here
                     fontFamily: 'SansOneBold',
                     color: '#353941'     // Text color
                 }

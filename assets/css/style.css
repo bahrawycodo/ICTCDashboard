@@ -169,6 +169,110 @@ body{background: #E9ECF3}
          opacity: 0;
      }
  }
+.customSelect .form-control::placeholder {
+    color: #8E98A3;
+}
+
+.customSelect .form-control::-webkit-input-placeholder {
+    color: #8E98A3;
+}
+
+.customSelect .form-control::-moz-placeholder {
+    color: #8E98A3;
+}
+
+.customSelect .form-control:-ms-input-placeholder {
+    color: #8E98A3;
+}
+
+.customSelect .form-control:-moz-placeholder {
+    color: #8E98A3;
+}
+
+.customSelect .cp span > i,
+.customSelect .cp span > .mainText span:not(.b) {
+    display: none;
+}
+
+.customSelect {
+    position: relative;
+    width: 100%;
+    /*! background: #fff; */
+}
+
+.customSelect select {
+    display: none;
+}
+
+.customSelect label {
+    display: flex;
+    justify-content: space-between;
+    color: #545454;
+    padding: 7px 15px;
+    font-size: 0.9rem;
+    align-items: center;
+    background: #fff;
+    border: 2px solid #CED4DA;
+    cursor: pointer;
+    border-radius: 0.6rem;
+    font-family: var(--BookFont);
+}
+
+.customSelect.open label {
+    border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.customSelect label > .updown {
+    font-size: 10px;
+}
+
+ .customSelect .listContainer {
+    position: absolute;
+    z-index: 1;
+    border: 1px solid #8E98A3;
+    max-height: 300px;
+    border-radius: 0 0 0.6rem 0.6rem;
+    overflow: hidden;
+    background: #fff;
+    width: 100%;
+}
+
+.customSelect .listContainer .form-control {
+    margin: 10px;
+    width: calc(100% - 20px);
+    box-shadow: none !important;
+    border-color: #8E98A3 !important;
+    background: #E4E8F0;
+    color: #8E98A3;
+    font-size: 0.8rem;
+    font-family: var(--BookFont);
+}
+
+.customSelect ul {
+    width: 100%;
+    background: #fff;
+    overflow-y: auto;
+    margin-bottom: 0;
+    max-height: 240px;
+}
+
+.customSelect ul li {
+    list-style-type: none;
+    color: #244166;
+    padding: 10px;
+    font-family: var(--BookFont);
+    border-bottom: 1px solid #EBEBEB;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.customSelect ul li:first-child {
+    border-top: 1px solid #8E98A3;
+}
+
+.customSelect ul li:last-child {
+    border-bottom: 0;
+}
 
 /* Start Header */
 header{background: #0033A0;position: fixed;width: 100%;top: 0;right: 0;left: 0;z-index:2}
@@ -587,7 +691,7 @@ textarea.form-control.input{min-height: 90px}
     overflow: hidden;
     text-align: center;
     font-family: var(--BookFont);
-    /*! font-weight: bold; */
+    /*! summernote-weight: bold; */
     font-size: 0.8rem;
     vertical-align: middle;
     --bs-border-width:2px;
