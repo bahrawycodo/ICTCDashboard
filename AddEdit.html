@@ -166,6 +166,19 @@
                             <div id="summernote"></div>
                         </div>
                     </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="form-group">
+                            <div class="custom-country-select">
+                                <!-- Country Selector -->
+                                <select id="countrySelector">
+                                    <!-- Country options will be dynamically generated -->
+                                </select>
+
+                                <!-- Telephone input -->
+                                <input type="tel" id="telephoneInput" placeholder="Enter phone number">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -179,9 +192,9 @@
 </footer>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/summernote.min.js"></script>
 <script src="assets/js/chart.js"></script>
 <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="assets/js/summernote.min.js"></script>
 
 <script src="assets/js/flatpickr.js"></script>
 <script src="assets/js/flatPicker-ar.js"></script>
@@ -218,20 +231,17 @@
         "locale": "ar" ,
         inline:true
          });
-    $('#summernote').summernote({
-        placeholder: 'Hello stand alone ui',
-        tabsize: 2,
-        height: 120,
-        toolbar: [
-            ['style', ['style']],
-            ['font', ['bold', 'underline', 'clear']],
-            ['color', ['color']],
-            ['para', ['ul', 'ol', 'paragraph']],
-            ['table', ['table']],
-            ['insert', ['link', 'picture', 'video']],
-            ['view', ['fullscreen', 'codeview', 'help']]
-        ]
+
+    $(document).ready(function() {
+        setTimeout(function() {
+            $('#summernote').summernote({
+                placeholder: 'Hello stand alone ui',
+                tabsize: 2,
+                height: 120,
+            });
+        }, 500); // Delay by 500ms
     });
+
 </script>
 </body>
 </html>
