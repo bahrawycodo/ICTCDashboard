@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css"/>
     <link rel="stylesheet" href="assets/css/flatpickr.min.css" />
     <link rel="stylesheet" href="assets/css/summernote.min.css" />
+    <link rel="stylesheet" href="assets/css/toastr.min.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-rtl.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
@@ -79,7 +80,8 @@
                     <div class="col-md-12 PageHeader">
                         <h2 class="PageTitle">صفحة الإضافة والتعديل</h2>
                         <div class="PageHeaderLinks">
-                            <a href="#" class="btn PrimaryBtn">اضافة</a>
+                            <a href="#" class="btn PrimaryBtn" id="ShowSweetAlert">دايالوج</a>
+                            <a href="#" class="btn PrimaryBtn" id="ShowToastAlert">اشعار</a>
                             <a href="#" class="btn PrimaryBtn">حفظ</a>
                         </div>
 
@@ -202,6 +204,7 @@
 <script src="assets/js/chart.js"></script>
 <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="assets/js/sweetalert2.js"></script>
+<script src="assets/js/toastr.min.js"></script>
 
 <script src="assets/js/flatpickr.js"></script>
 <script src="assets/js/flatPicker-ar.js"></script>
@@ -248,7 +251,7 @@
             });
         }, 500); // Delay by 500ms
     });
-$('.PrimaryBtn').on('click',function (){
+$('#ShowSweetAlert').on('click',function (){
     const swalWithBootstrapButtons = Swal.mixin({
         customClass: {
             confirmButton: "btn btn-success",
@@ -282,6 +285,19 @@ $('.PrimaryBtn').on('click',function (){
             });
         }
     });})
+    $('#ShowToastAlert').on('click',function (){
+        toastr.options = {
+            showDuration:300,
+            hideDuration:1000000,
+            timeOut:5000000000,
+            showEasing:'swing',
+            hideEasing:'linear',
+            showMethod:'fadeIn',
+            hideMethod:'fadeOut',
+            positionClass:'toast-top-right'
+        };
+        var $toast = toastr['warning']('Welcome in my site', 'welcome');
+    })
 </script>
 </body>
 </html>

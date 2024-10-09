@@ -286,6 +286,7 @@ header .NavToggle span:last-child{margin-bottom: 0;}
 header .search{width: 100%;margin-left: 20px;}
 [dir="rtl"] header .search{margin-right: 20px;margin-left: 0}
 header .search .input-group-text{background: #fff;color: #939FB4;border:none}
+header .search .input-group-text:before{content: none}
 header .search .form-control{outline: none !important;box-shadow: none !important;border:none;font-family: SansOneBook;line-height: 1;height: 34px;font-size: 1rem;color: #939FB4;padding-left: 0;padding-right:0}
 header .search .form-control::placeholder {color: #939FB4;}
 header .search .form-control::-webkit-input-placeholder {color: #939FB4;}
