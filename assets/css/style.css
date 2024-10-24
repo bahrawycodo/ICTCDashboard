@@ -502,6 +502,8 @@ main .content{padding: 20px;position: relative;margin-right: auto;transition: al
 .DataHeader {
     background: #fff;
     border-radius: 10px;
+    margin-right: 0;
+    margin-left: 0
 }
 
 .DataHeader .form-group .form-label {
