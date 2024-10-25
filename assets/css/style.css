@@ -1084,5 +1084,77 @@ textarea.form-control.input{min-height: 90px}
 .footer .SocialLinks .input-group.whatsapp .input-group-text{background: #25D366}
 .footer .SocialLinks .input-group.youtube .input-group-text{background:#F70000 }
 .swal2-actions{gap: 1rem}
+.d-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.b-r-50 {
+    border-radius: 50% !important;
+}
+.w-45 {
+    width: 45px !important;
+}
+.h-45 {
+    height: 45px !important;
+}
+.f-s-12 {
+    font-size: 12px !important;
+}
+.chat-contact{max-height: 450px;overflow-y: auto}
+.chat-div .card,.chat-container-content-box .card{border-radius: 0;box-shadow:  0px 0px 21px 3px rgba( 139, 132, 118, 0.05);border: none;margin-bottom: 1.25rem;transition: all 0.3s ease;}
+.chat-div .card-header,.chat-container-content-box .card-header,.chat-container-content-box .card-footer{background: #fff;border-color: #dee2e6}
+.chat-div .card-header h6,.chat-container-content-box .card-header .details h6{font-family: var(--BoldFont);font-size: 0.8rem !important;}
+.chat-div .card-header div.job,.chat-container-content-box .card-header .details div.job{font-family: var(--BookFont);font-size: 0.7rem !important;font-weight: bold;}
+.chat-div .card-body .chat-contactbox{padding-left: 10px}
+.chat-div .card-body .chat-contactbox .details{font-family: var(--BookFont);font-size: 0.8rem !important;display: flex;flex-direction: column;justify-content: space-around;}
+.chat-contact .chat-contactbox + .chat-contactbox {
+    border-top: 1px solid rgba(0, 0, 0, 0.21);
+}
+
+.chat-container-content-box,.chat-container-content-box .card-header {border-radius: 0;background: #fff}
+.chat-container-content-box .messages{height: 375px;overflow-y: auto;padding: 10px;}
+.chat-container-content-box .messages >div >.badge{background: rgba(207, 210, 232,0.2) !important;font-family: var(--BookFont);font-size: 12px;padding: 8px 10px; }
+.chat-container-content-box .messages >div:not(.text-center){display: flex;gap: 0.5rem;align-items: center;margin-bottom:10px }
+.chat-container-content-box .messages >div.left{direction: ltr;}
+.chat-container-content-box .messages >div img{width: 40px;height: 40px;border-radius: 50%}
+.chat-container-content-box .messages >div p:not(.chat-time){padding: 5px;background: #CFD2E8;border-radius: 8px 8px 8px 3px;font-family: var(--BookFont);font-size: 0.8rem;color: #270F04;margin-bottom: 5px;}
+.chat-container-content-box .messages .right p:not(.chat-time){background: #39C0C0;color: #fff; border-radius: 8px 8px 3px 8px}
+.chat-container-content-box .messages >div p.chat-time{display: flex;align-items: center;gap: 5px;margin-bottom: 5px}
+.chat-container-content-box .messages >div p.chat-time.active i{color:#39C0C0}
+.chat-container-content-box .card-footer .input-group{border-color:rgba(142, 152, 163,0.4);border-width: 1px;border-radius: 5px;}
+.chat-container-content-box .card-footer .form-control{box-shadow: none;font-family: var(--BookFont);font-size: 0.9rem;background: transparent;padding: 0.8rem 0.75rem;border-width: 0}
+.chat-container-content-box .card-footer textarea.form-control{border-color:rgba(142, 152, 163,0.4);border-width: 1px;border-radius: 5px;height:55px}
+.chat-container-content-box .card-footer .input-group .input-group-text{cursor: pointer;border-radius: 0;background: none;border: 0;color:#0033A0;border-right:2px solid #f7f7f9;}
+.chat-container-content-box .card-footer .btn{width: 100px;height: auto;display: flex;justify-content: center;align-items: center;gap: 0.5rem;max-height: 50px;border-radius: 5px;}
+.chat-close-togglebtn{
+    display: none;
+}
+@media screen and (max-width: 991.5px) {
+    .chat-close-togglebtn {
+        display: block;
+    }
+}
+.chat-close-togglebtn a,.toggle-btn{
+    color: var(--bs-heading-color);
+}
+@media screen and (max-width: 991.5px) {
+     .chat-div {
+         width: 0;
+         height: 0;
+         position: absolute;
+         z-index: 3;
+         overflow: hidden;
+         transition:all 0.2s ease-in-out;
+
+
+     }
+    .chattoggle {
+        width: calc(100% - 245px);
+        height: 100%;
+        transition:all 0.2s ease-in-out;
+    }
+}
+
 
 /* End Home Page */
