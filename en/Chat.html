@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../assets/images/favicon.svg"/>
+
+    <title>ICTCs</title>
+    <link rel="stylesheet" href="../assets/css/fontawesome.css"/>
+    <link rel="stylesheet" href="../assets/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css"/>
+    <link rel="stylesheet" href="../assets/css/flatpickr.min.css" />
+    <link rel="stylesheet" href="../assets/css/summernote.min.css" />
+    <link rel="stylesheet" href="../assets/css/toastr.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../assets/css/bootstrap-rtl.css"/>
+    <link rel="stylesheet" href="../assets/css/style.css"/>
+
+</head>
+<body>
+<header class="pb-2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-2 col-lg-3 col-md-3">
+                <div class="logo">
+                    <img src="../assets/images/Logo.svg" alt="" class="ImgWhite"/>
+                </div>
+            </div>
+            <div class="col-xl-10 col-lg-9 col-md-9 d-flex align-items-center">
+                <div class="RightNav">
+                    <button class="NavToggle"><span></span><span></span><span></span></button>
+                    <div class="form-group search d-none d-lg-block">
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" class="form-control" placeholder="ابحث هنا">
+                        </div>
+                    </div>
+                </div>
+                <ul class="LeftNav">
+                    <li class="notification"><i class="fa-regular fa-bell"></i></li>
+                    <li class="language"><i class="fa-solid fa-language"></i></li>
+                    <li class="settings"><i class="fa-light fa-gear"></i></li>
+                    <li class="profile hasSubmenu">
+                        <i class="fa-light fa-circle-user"></i><span class="title">Mohamed Ahmed</span>
+                        <ul>
+                            <li><a href="#">Edit Information</a> </li>
+                            <li><a href="#">Logout</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container-fluid">
+        <div class="row d-flex">
+            <aside class="col-xl-2 col-lg-3 col-md-3">
+                <ul>
+                    <li> <a href="#" class="active"><i class="fa-solid fa-grid-2"></i> <span class="title">Dashboard</span> </a></li>
+                    <li> <a href="#"><i class="fa-solid fa-house-chimney"></i> <span class="title">Home</span> </a></li>
+                    <li> <a href="#"><i class="fa-solid fa-memo-pad"></i><span class="title">Training Plan</span> </a></li>
+                    <li class="hasSubmenu"> <a href="#"><i class="fa-solid fa-graduation-cap"></i> <span class="title">Training Programs</span></a>
+                        <ul>
+                            <li><a href="#"><span class="title">Featured Programs</span> </a></li>
+                            <li><a href="#"><span class="title">Latest Programs</span> </a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="#"><i class="fa-solid fa-bell"></i> <span class="title">Notifications</span> </a></li>
+                    <li> <a href="#"><i class="fa-solid fa-envelope"></i> <span class="title">Messages</span> </a></li>
+                    <li> <a href="#"><i class="fa-solid fa-user"></i> <span class="title">Users</span> </a></li>
+                    <li> <a href="#"><i class="fa-solid fa-right-from-bracket"></i> <span class="title">Logout</span> </a></li>
+                </ul>
+            </aside>
+            <section class="content col-xl-10 col-lg-9 col-md-9">
+                <div class="row">
+                    <div class="col-md-12 PageHeader">
+                        <h2 class="PageTitle">Chat Page</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="chat-div">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="d-flex align-items-center">
+                            <span class="chatdp h-45 w-45 d-flex-center b-r-50 position-relative bg-danger">
+                                <img src="../assets/images/chat/1.png" alt="" class="img-fluid b-r-50">
+                                <span class="position-absolute top-0 end-0 p-1 bg-success border border-light rounded-circle"></span>
+                            </span>
+                                        <div class="flex-grow-1 ps-2">
+                                            <h6 class="fs-6">Admin</h6>
+                                            <div class="text-muted f-s-12 job">Technical Support</div>
+                                        </div>
+                                        <div class="chat-close-togglebtn">
+                                            <a class="ms-2 close-toggle" role="button"><i class="fa-solid fa-bars"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chat-contact">
+                                        <div class="chat-contactbox d-flex justify-content-between pb-3">
+                                            <div class="d-flex gap-1">
+                                    <span class="h-45 w-45 d-flex-center b-r-50 position-relative">
+                                        <img src="https://placehold.co/50x50?text=mb" alt="" class="img-fluid b-r-50">
+                                        <span class="position-absolute top-0 end-0 p-1 bg-success border border-light rounded-circle"></span>
+                                    </span>
+                                                <div class="details">
+                                                    <p class="mb-0 fw-bold text-dark txt-ellipsis-1">Mahmoud El Bahrawy</p>
+                                                    <p class="text-secondary mb-0 f-s-12 mb-0 chat-message"><i class="fa-solid fa-check-double"></i> I want to contact for an important matter</p>
+                                                </div>
+                                            </div>
+                                            <p class="f-s-12 chat-time">2:30AM</p>
+                                        </div>
+                                        <!-- Repeated contact entries here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-7">
+                        <div class="chat-container-content-box">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-lg-none">
+                                            <a class="me-3 toggle-btn" role="button"><i class="fa-solid fa-bars"></i></a>
+                                        </div>
+                                        <span class="chatdp h-45 w-45 d-flex-center b-r-50 position-relative bg-danger">
+                                <img src="https://placehold.co/50x50?text=mb" alt="" class="img-fluid b-r-50">
+                                <span class="position-absolute top-0 end-0 p-1 bg-success border border-light rounded-circle"></span>
+                            </span>
+                                        <div class="flex-grow-1 ps-2 details">
+                                            <h6 class="fs-6">Mahmoud El Bahrawy</h6>
+                                            <div class="text-muted f-s-12 job">Online</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="messages">
+                                        <div class="text-center">
+                                            <span class="badge bg-light text-dark">Today</span>
+                                        </div>
+                                        <div class="right">
+                                            <img src="../assets/images/chat/1.png" />
+                                            <div class="details">
+                                                <p>Welcome! What is your inquiry?</p>
+                                                <p class="f-s-12 chat-time active"><span>2:00PM</span><i class="fa-solid fa-check-double"></i></p>
+                                            </div>
+                                        </div>
+                                        <div class="left">
+                                            <img src="https://placehold.co/50x50?text=mb" />
+                                            <div class="details">
+                                                <p>This text is an example of text that can be replaced in the same space. This text was generated from the Arabic text generator, where you can generate similar text or many other texts in addition to increasing the number of characters the application generates.</p>
+                                            </div>
+                                        </div>
+                                        <!-- Repeated chat messages here -->
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="Your message...">
+                                        <div class="input-group-text"><i class="fa-solid fa-paper-plane sendBtn"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</main>
+
+
+<footer>
+
+</footer>
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/summernote.min.js"></script>
+<script src="../assets/js/chart.js"></script>
+<script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../assets/js/sweetalert2.js"></script>
+<script src="../assets/js/toastr.min.js"></script>
+
+<script src="../assets/js/flatpickr.js"></script>
+<script src="../assets/js/flatPicker-ar.js"></script>
+<script src="../assets/js/customselect.js"></script>
+<script src="../assets/js/main.js"></script>
+<script>
+    $(document).on('click','.toggle-btn',function(){
+        $(".chat-div").toggleClass('chattoggle')
+    })
+    $(document).on('click','.close-toggle',function(){
+        $(".chat-div").toggleClass('chattoggle')
+    })
+</script>
+</body>
+</html>

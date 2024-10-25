@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../assets/images/favicon.svg"/>
+
+    <title>ICTCs</title>
+    <link rel="stylesheet" href="../assets/css/fontawesome.css"/>
+    <link rel="stylesheet" href="../assets/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../assets/css/bootstrap-rtl.css"/>
+    <link rel="stylesheet" href="../assets/css/style.css"/>
+
+</head>
+<body>
+<header class="pb-2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-2 col-lg-3 col-md-3">
+                <div class="logo">
+                    <img src="../assets/images/Logo.svg" alt="" class="ImgWhite"/>
+                </div>
+            </div>
+            <div class="col-xl-10 col-lg-9 col-md-9 d-flex align-items-center">
+                <div class="RightNav">
+                    <button class="NavToggle"><span></span><span></span><span></span></button>
+                    <div class="form-group search d-none d-lg-block">
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" class="form-control" placeholder="ابحث هنا">
+                        </div>
+                    </div>
+                </div>
+                <ul class="LeftNav">
+                    <li class="notification"><i class="fa-regular fa-bell"></i></li>
+                    <li class="language"><i class="fa-solid fa-language"></i></li>
+                    <li class="settings"><i class="fa-light fa-gear"></i></li>
+                    <li class="profile hasSubmenu">
+                        <i class="fa-light fa-circle-user"></i><span class="title">Mohamed Ahmed</span>
+                        <ul>
+                            <li><a href="#">Edit Information</a> </li>
+                            <li><a href="#">Logout</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row d-flex">
+                <aside class="col-xl-2 col-lg-3 col-md-3">
+                    <ul>
+                        <li> <a href="#" class="active"><i class="fa-solid fa-grid-2"></i> <span class="title">Dashboard</span> </a></li>
+                        <li> <a href="#"><i class="fa-solid fa-house-chimney"></i> <span class="title">Home</span> </a></li>
+                        <li> <a href="#"><i class="fa-solid fa-memo-pad"></i><span class="title">Training Plan</span> </a></li>
+                        <li class="hasSubmenu"> <a href="#"><i class="fa-solid fa-graduation-cap"></i> <span class="title">Training Programs</span></a>
+                            <ul>
+                                <li><a href="#"><span class="title">Featured Programs</span> </a></li>
+                                <li><a href="#"><span class="title">Latest Programs</span> </a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="#"><i class="fa-solid fa-bell"></i> <span class="title">Notifications</span> </a></li>
+                        <li> <a href="#"><i class="fa-solid fa-envelope"></i> <span class="title">Messages</span> </a></li>
+                        <li> <a href="#"><i class="fa-solid fa-user"></i> <span class="title">Users</span> </a></li>
+                        <li> <a href="#"><i class="fa-solid fa-right-from-bracket"></i> <span class="title">Logout</span> </a></li>
+                    </ul>
+                </aside>
+                <section class="content col-xl-10 col-lg-9 col-md-9">
+                    <div class="DashboardCounters row">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="card top">
+                                <div class="card-header">
+                                    <span>+29.08</span>
+                                    <i class="fa-regular fa-arrow-up-right"></i>
+                                    <i class="fa-light fa-percent"></i>
+                                </div>
+                                <div class="card-body">
+                                    <div class="icon"><i class="fa-light fa-users"></i></div>
+                                    <div class="details">
+                                        <h4>Number of Website Visitors</h4>
+                                        <span>25,369</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="card top">
+                                <div class="card-header">
+                                    <span>-12.40</span>
+                                    <i class="fa-regular fa-arrow-down-right"></i>
+                                    <i class="fa-light fa-percent"></i>
+                                </div>
+                                <div class="card-body">
+                                    <div class="icon"><i class="fa-regular fa-user-tag"></i></div>
+                                    <div class="details">
+                                        <h4>Number of Registrations</h4>
+                                        <span>19,220</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="card top">
+                                <div class="card-header">
+                                    <span>+55.21</span>
+                                    <i class="fa-regular fa-arrow-up-right"></i>
+                                    <i class="fa-light fa-percent"></i>
+                                </div>
+                                <div class="card-body">
+                                    <div class="icon"><i class="fa-solid fa-rectangle-list"></i></div>
+                                    <div class="details">
+                                        <h4>Subscription Requests</h4>
+                                        <span>11,745</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="card top">
+                                <div class="card-header">
+                                    <span>+95.02</span>
+                                    <i class="fa-regular fa-arrow-up-right"></i>
+                                    <i class="fa-light fa-percent"></i>
+                                </div>
+                                <div class="card-body">
+                                    <div class="icon"><i class="fa-light fa-user-graduate"></i></div>
+                                    <div class="details">
+                                        <h4>Training Programs</h4>
+                                        <span>652</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row topCharts">
+                        <div class="col-lg-8 col-md-12">
+                            <div class="card ClientsNumberContainer SameHeight">
+                                <div class="card-header">
+                                    <h4 class="card-title">Number of Clients</h4>
+                                </div>
+                                <div class="card-body">
+                                    <ul id="ClientsNumberNav">
+                                        <li data-filter="RegistrationReqs"><span class="CNumber">7,585</span><span class="CTitle">Registration Requests</span></li>
+                                        <li data-filter="SubscriptionsNumber"><span class="CNumber">22,890</span><span class="CTitle">Number of Subscribers</span></li>
+                                        <li data-filter="TrainingPrograms"><span class="CNumber">1,890</span><span class="CTitle">Training Programs</span></li>
+                                        <li data-filter="SubscriptionNumberPercentage" class="active"><span class="CNumber">23.36%</span><span class="CTitle">Percentage Increase in Subscribers</span></li>
+                                    </ul>
+                                    <div id="ClientsNumber" class="ltr"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card SubscriptionsPercentageContainer SameHeight">
+                                <div class="card-header">
+                                    <h4 class="card-title">Subscription Percentages</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div id="SubscriptionsPercentage" class="ltr"></div>
+                                    <div class="PercentageProgressBars">
+                                        <div class="PercentageContainer">
+                                            <div class="PercentageTitle">
+                                                <span class="PTitle">Attendance Rate</span>
+                                                <span class="PNumber">75%</span>
+                                            </div>
+                                            <div class="Percentage" style="--percentage: 75%"></div>
+                                        </div>
+                                        <div class="PercentageContainer">
+                                            <div class="PercentageTitle">
+                                                <span class="PTitle">Success Rate</span>
+                                                <span class="PNumber">90%</span>
+                                            </div>
+                                            <div class="Percentage" style="--percentage: 90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row centerCharts">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card TrainingProgramsContainer SameHeight">
+                                <div class="card-body">
+                                    <div id="TrainingPrograms" class="ltr"></div>
+                                </div>
+                                <div class="card-footer WidthListColors">
+                                    <ul style="--LiRowCount:2">
+                                        <li style="--Back:#6EBDF9">Latest Programs</li>
+                                        <li style="--Back:#E686EC">Recently Added</li>
+                                        <li style="--Back:#7ED9AD">Featured Programs</li>
+                                        <li style="--Back:#EE6E42">Programs 2024</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card MostRegistrationContainer SameHeight">
+                                <div class="card-body">
+                                    <div id="MostRegistration" class="ltr"></div>
+                                </div>
+                                <div class="card-footer WidthListColors">
+                                    <ul style="--LiRowCount:3">
+                                        <li style="--Back:#56B2F9">Leadership and Management</li>
+                                        <li style="--Back:#F5C258">Public Relations</li>
+                                        <li style="--Back:#7ED9AD">Marketing and Sales</li>
+                                        <li style="--Back:#A174F6">Human Resources</li>
+                                        <li style="--Back:#E686EC">Finance and Accounting</li>
+                                        <li style="--Back:#EE6B3F">Legal Management</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card SubscriptionsPercentageContainer SameHeight">
+                                <div class="card-header">
+                                    <h4 class="card-title">Training Programs</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="WidthListColors">
+                                        <ul style="--LiRowCount:2">
+                                            <li style="--Back:#F9C80E">Latest Programs</li>
+                                            <li style="--Back:#F86624">Featured Programs</li>
+                                        </ul>
+                                    </div>
+                                    <div id="TrainingProgramsBar" class="ltr"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card SubscriptionTable">
+                                <div class="card-body">
+                                    <div class="row filterContainer">
+                                        <div class="col-lg-8 col-md-6">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Search ..." />
+                                                <button class="btn" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="TableLength">
+                                                <div class="customSelect" id="TableLength" data-title="Number of entries displayed">
+                                                    <select>
+                                                        <option value="10">10</option>
+                                                        <option value="20">20</option>
+                                                        <option value="30">30</option>
+                                                        <option value="40">40</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row tableContainer">
+                                        <div class="col-md-12">
+                                            <table class="table table-bordered table-responsive">
+                                                <thead>
+                                                <tr>
+                                                    <th>Subscriber Name</th>
+                                                    <th>Email</th>
+                                                    <th>Program Name</th>
+                                                    <th>Subscription Date</th>
+                                                    <th>Status</th>
+                                                    <th>Actions</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>John Doe</td>
+                                                    <td>john.doe@example.com</td>
+                                                    <td>Leadership Training</td>
+                                                    <td>2024-10-01</td>
+                                                    <td>Active</td>
+                                                    <td>
+                                                        <button class="btn btn-primary">Edit</button>
+                                                        <button class="btn btn-danger">Delete</button>
+                                                    </td>
+                                                </tr>
+                                                <!-- More rows as necessary -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <nav aria-label="Page navigation">
+                                                <ul class="pagination">
+                                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/chart.js"></script>
+<script src="../assets/js/customselect.js"></script>
+<script src="../assets/js/DashboardCharts.js"></script>
+<script src="../assets/js/main.js"></script>
+    <script>
+        let ClientsNumberData = {
+            datasets: [{
+                label: 'Bar Dataset',
+                data: [10, 20, 30, 40,50,20,40,30,60,30,10,20],
+                backgroundColor:'#39C0C0',
+                barPercentage: 0.4,
+                // this dataset is drawn below
+                order: 1
+            }, {
+                label: '',
+                data: [20, 40, 30, 40,30,35,32,33,50,30,32,35],
+                type: 'line',
+                borderColor: '#36A2EB',
+                backgroundColor: '#FF9000',
+                // this dataset is drawn on top
+                order: 0
+            }, {
+                label: '',
+                data: [10, 12, 15, 10,12,10,12,13,15,10,12,13],
+                type: 'line',
+                borderColor: '#FF9000',
+                backgroundColor: 'transparent',
+                borderDashOffset:5,
+                borderDash: [10,5],
+                radius: 0,
+                tension: 0.1,
+                // this dataset is drawn on top
+                order: 1
+            },],
+            labels: [ 'يناير', 'فبراير', 'مارس', 'ابريل','مايو','يونيه','يوليو','اغسطس','سبتمبر' ,'اكتوبر','نوفمبر','ديسمبر']
+
+        };
+        let SubscriptionsPercentageData = {
+            labels: ['نسبة الحضور', 'نسبة النجاح', 'طلبات التسجيل', 'عدد المشتركين','نسبة محايدة'],
+            datasets: [
+                {
+                    label: 'Dataset 1',
+                    data: [55,23,22,21,60],
+                    backgroundColor: ["#56B2F9","#7ED9AD","#39C0C0","#EE6B3F","#D6D6D6"],
+                }
+            ]
+        };
+        let TrainingProgramsData = {
+            labels: ['برامج 2024', 'البرامج المميزة', 'مضاف حديثا','أحدث البرامج'],
+            datasets: [
+                {
+                    label: 'Dataset 1',
+                    data: [40,25,15,20],
+                    backgroundColor: ["#EE6E42","#7ED9AD","#E686EC","#6EBDF9"],
+                }
+            ]
+        };
+        let MostRegistrationData = {
+            labels: ['الإدارة القانونية','المالية والمحاسبة','الموارد البشرية', 'التسويق والمبيعات', 'العلاقات العامة','القيادة والإدارة'],
+            datasets: [
+                {
+                    label: 'Dataset 1',
+                    data: [40,25,15,20],
+                    backgroundColor: ["#EE6B3F","#E686EC","#A174F6","#7ED9AD","#F5C258","#56B2F9"],
+                }
+            ]
+        };
+        let TrainingProgramsBarData = {
+            labels: [ 'البرامج المميزة','أحدث البرامج'],
+            datasets: [
+                {
+                    label: 'Bar Dataset',
+                    data: [30,50],
+                    backgroundColor: ["#F86624","#F9C80E"],
+                    barPercentage: 0.4,
+                    // this dataset is drawn below
+                    order: 1,
+
+                }
+            ]
+        };
+        loadChart('bar','ClientsNumber',ClientsNumberData);
+        loadChart('doughnut','SubscriptionsPercentage',SubscriptionsPercentageData);
+        loadChart('doughnut','TrainingPrograms',TrainingProgramsData,'البرامج التدريبية');
+        loadChart('doughnut','MostRegistration',MostRegistrationData,'الأكثر تسجيل');
+        loadChart('bar','TrainingProgramsBar',TrainingProgramsBarData);
+        makeSameHeight('.topCharts')
+        makeSameHeight('.centerCharts')
+    </script>
+</body>
+</html>

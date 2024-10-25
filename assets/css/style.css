@@ -226,7 +226,7 @@ body{background: #E9ECF3}
     font-size: 10px;
 }
 
- .customSelect .listContainer {
+.customSelect .listContainer {
     position: absolute;
     z-index: 1;
     border: 1px solid #8E98A3;
@@ -368,7 +368,7 @@ main .content{padding: 20px;position: relative;margin-right: auto;transition: al
 .ClientsNumberContainer .card-title{font-family: SansOneBold;font-size: 1rem;color: #0033A0;margin-bottom: 0;}
 .ClientsNumberContainer .card-body{padding-top: 0;}
 #ClientsNumber,#SubscriptionsPercentage,#TrainingPrograms,#MostRegistration{width: 80%;margin: auto;max-width: 300px;}
-
+#ClientsNumber{max-width: initial;width: 100%;}
 .ClientsNumberContainer #ClientsNumberNav{display: flex;width: calc(100% + 30px);margin-right: -15px;margin-left: -15px;}
 .ClientsNumberContainer #ClientsNumberNav li{list-style-type: none;display: flex;flex-direction: column;justify-content: center;text-align: center;border: 1px dashed #000;padding: 15px;gap: 0.3rem;width: calc((100% - 33%) /3);}
 .ClientsNumberContainer #ClientsNumberNav li .CNumber{color: #000;font-size: 1.1rem;font-family: MyRiadpro}
@@ -398,7 +398,7 @@ main .content{padding: 20px;position: relative;margin-right: auto;transition: al
 /* End Training Programs */
 /* Start Subscription Table */
 .SubscriptionTable .filterContainer .customSelect .cp span> i,.SubscriptionTable .filterContainer .customSelect .cp span> .mainText span:not(.b){/*! display: none; */}
-.SubscriptionTable .filterContainer .customSelect .cp span> .mainText span{ padding: 7px 15px;}
+.SubscriptionTable .filterContainer .customSelect .cp span> .mainText span{ padding: 0px 15px;}
 .SubscriptionTable .filterContainer .customSelect .cp span> .mainText{display: flex}
 .SubscriptionTable .filterContainer .customSelect .cp span> .mainText span:not(.b){font-family: SansOneBook;color: #fff;background: #0033A0;font-size: 0.8rem;   width: 90%;text-align: center;}
 .SubscriptionTable .filterContainer .customSelect {
@@ -419,7 +419,8 @@ main .content{padding: 20px;position: relative;margin-right: auto;transition: al
     cursor: pointer;
     border-radius: 5px;
     font-family: var(--BookFont);
-    overflow: hidden
+    overflow: hidden;
+    padding: 6px 15px;
 }
 .SubscriptionTable .filterContainer .customSelect label >span{width: 88%;}
 .SubscriptionTable .filterContainer .customSelect.open label{
@@ -648,7 +649,7 @@ main .content{padding: 20px;position: relative;margin-right: auto;transition: al
 .input-group .input-group-text{
     background: #fff;
     color: #8C99AF;
-        border: 2px solid #CED4DA;
+    border: 2px solid #CED4DA;
 }
 [dir="rtl"] .input-group >:first-child{
     border-left: none;
@@ -657,14 +658,14 @@ main .content{padding: 20px;position: relative;margin-right: auto;transition: al
     border-right: none
 }
 .input-group{background: #fff;
-  border-radius: 10px;
-  border: 2px solid #CED4DA;}
+    border-radius: 10px;
+    border: 2px solid #CED4DA;}
 [dir="rtl"] .input-group > :not(:last-child):nth-child(2){border-right:none;border-left:none}
 
 [dir="rtl"] .input-group > :not(:last-child) {
-  border-radius: var(--bs-border-radius);
-  border-top-left-radius: 0 !important;
-  border-bottom-left-radius: 0 !important;
+    border-radius: var(--bs-border-radius);
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
 }
 .input-group .input-group-text{position: relative;}
 .input-group .input-group-text:before{content:"";width: 2px;background:#8C99AF;height: 20px; position: absolute;top:calc(100% / 2 - 10px);   }
@@ -912,6 +913,7 @@ textarea.form-control.input{min-height: 90px}
 .ProgramBody .tabs .tab-content .tab-pane .group{
     position: relative;
     padding:1.6rem 1.2rem 0.8rem 1.2rem;
+    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
 .ProgramBody .tabs .tab-content .tab-pane h4,.ProgramBody .tabs .tab-content .tab-pane h5{
     font-family: var(--BoldFont);
@@ -1075,14 +1077,15 @@ textarea.form-control.input{min-height: 90px}
 .Home .footer .footer-title{position: absolute;top: -25px;right: 50%;transform: translateX(50%);border: 2px solid #CACACC;border-radius: 20px;background: #fff;font-family: SansOneBold;font-size: 1rem;color: #5C6177;padding: 10px 20px;z-index: 1;}
 @media(max-width:767px){.Home .footer .footer-title{font-size: 0.8rem;}}
 .footer .SocialLinks .input-group{border-radius: 30px  10px 10px 30px;background: #fff;padding: 5px;margin-bottom: 15px;border: 2px solid #CECED0}
+.footer .SocialLinks .input-group .input-group-text:before{content: none}
 .footer .SocialLinks .input-group .input-group-text{border-radius: 50% !important;;width: 40px;height: 40px;border: none;color: #fff;font-size: 1.2rem;background: #000;display: flex;justify-content: center;align-items: center}
 .footer .SocialLinks .input-group .form-control{border: 0;box-shadow: none;background: transparent;height: 40px;font-family: MyRiadpro;color: #6B6970;font-size:1rem;}
-.footer .SocialLinks .input-group.facebook .input-group-text{background: #214E8D}
-.footer .SocialLinks .input-group.instagram .input-group-text{background:#FF4C46 }
-.footer .SocialLinks .input-group.twitter .input-group-text{background:#000000 }
-.footer .SocialLinks .input-group.linkedin .input-group-text{background:#0A66C2 }
-.footer .SocialLinks .input-group.whatsapp .input-group-text{background: #25D366}
-.footer .SocialLinks .input-group.youtube .input-group-text{background:#F70000 }
+.footer .SocialLinks .input-group.facebook .input-group-text{background: #214E8D !important}
+.footer .SocialLinks .input-group.instagram .input-group-text{background:#FF4C46 !important}
+.footer .SocialLinks .input-group.twitter .input-group-text{background:#000000 !important; }
+.footer .SocialLinks .input-group.linkedin .input-group-text{background:#0A66C2 !important}
+.footer .SocialLinks .input-group.whatsapp .input-group-text{background: #25D366 !important}
+.footer .SocialLinks .input-group.youtube .input-group-text{background:#F70000 !important}
 .swal2-actions{gap: 1rem}
 .d-flex-center {
     display: flex;
@@ -1139,16 +1142,16 @@ textarea.form-control.input{min-height: 90px}
     color: var(--bs-heading-color);
 }
 @media screen and (max-width: 991.5px) {
-     .chat-div {
-         width: 0;
-         height: 0;
-         position: absolute;
-         z-index: 3;
-         overflow: hidden;
-         transition:all 0.2s ease-in-out;
+    .chat-div {
+        width: 0;
+        height: 0;
+        position: absolute;
+        z-index: 3;
+        overflow: hidden;
+        transition:all 0.2s ease-in-out;
 
 
-     }
+    }
     .chattoggle {
         width: calc(100% - 245px);
         height: 100%;

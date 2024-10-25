@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../assets/images/favicon.svg"/>
+
+    <title>ICTCs</title>
+    <link rel="stylesheet" href="../assets/css/fontawesome.css"/>
+    <link rel="stylesheet" href="../assets/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../assets/css/bootstrap-rtl.css"/>
+    <link rel="stylesheet" href="../assets/css/style.css"/>
+
+</head>
+<body>
+<header class="pb-2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-2 col-lg-3 col-md-3">
+                <div class="logo">
+                    <img src="../assets/images/Logo.svg" alt="" class="ImgWhite"/>
+                </div>
+            </div>
+            <div class="col-xl-10 col-lg-9 col-md-9 d-flex align-items-center">
+                <div class="RightNav">
+                    <button class="NavToggle"><span></span><span></span><span></span></button>
+                    <div class="form-group search d-none d-lg-block">
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" class="form-control" placeholder="ابحث هنا">
+                        </div>
+                    </div>
+                </div>
+                <ul class="LeftNav">
+                    <li class="notification"><i class="fa-regular fa-bell"></i></li>
+                    <li class="language"><i class="fa-solid fa-language"></i></li>
+                    <li class="settings"><i class="fa-light fa-gear"></i></li>
+                    <li class="profile hasSubmenu">
+                        <i class="fa-light fa-circle-user"></i><span class="title">Mohamed Ahmed</span>
+                        <ul>
+                            <li><a href="#">Edit Information</a> </li>
+                            <li><a href="#">Logout</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container-fluid">
+        <div class="row d-flex">
+            <aside class="col-xl-2 col-lg-3 col-md-3">
+                <ul>
+                    <li> <a href="#" class="active"><i class="fa-solid fa-grid-2"></i> <span class="title">Dashboard</span> </a></li>
+                    <li> <a href="#"><i class="fa-solid fa-house-chimney"></i> <span class="title">Home</span> </a></li>
+                    <li> <a href="#"><i class="fa-solid fa-memo-pad"></i><span class="title">Training Plan</span> </a></li>
+                    <li class="hasSubmenu"> <a href="#"><i class="fa-solid fa-graduation-cap"></i> <span class="title">Training Programs</span></a>
+                        <ul>
+                            <li><a href="#"><span class="title">Featured Programs</span> </a></li>
+                            <li><a href="#"><span class="title">Latest Programs</span> </a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="#"><i class="fa-solid fa-bell"></i> <span class="title">Notifications</span> </a></li>
+                    <li> <a href="#"><i class="fa-solid fa-envelope"></i> <span class="title">Messages</span> </a></li>
+                    <li> <a href="#"><i class="fa-solid fa-user"></i> <span class="title">Users</span> </a></li>
+                    <li> <a href="#"><i class="fa-solid fa-right-from-bracket"></i> <span class="title">Logout</span> </a></li>
+                </ul>
+            </aside>
+            <section class="content col-xl-10 col-lg-9 col-md-9">
+                <div class="row">
+                    <div class="col-md-12 PageHeader">
+                        <h2 class="PageTitle">Course Details</h2>
+                        <div class="PageHeaderLinks">
+                            <a href="#" class="btn PrimaryBtn">Save</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ProgramDetailsSubHeader align-items-center">
+                    <div class="col-lg-9 col-md-12 mb-3">
+                        <div class="card SameHeight">
+                            <div class="card-header">
+                                <h4 class="ProgramTitle editableText active">Salary Preparation, Analysis, and Management</h4>
+                                <input type="text" class="form-control editableInput" id="ProgramTitle" data-edited="false"/>
+                                <a href="#" class="btn Edit active"><i class="fa-solid fa-pen"></i><span>Edit</span></a>
+                                <a href="#" class="btn Show"><i class="fa-solid fa-eye"></i><span>View</span></a>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0 ProgramDescription editableText active">Employee costs in terms of salaries and other benefits are among the largest costs for any company, alongside the cost of goods sold (cost of sales), rent, and depreciation. If you work for a goods-producing company, this cost is part of the cost of merchandise or part of operating costs, which has a dual impact on you. Properly handling and reporting these costs is key to analysis and decision-making. This course begins with an introduction to the departments of human resources, accounting, finance, and payroll. It will cover the preparation and calculation of salaries, including the necessary controls and matters to verify in advance to ensure data is used correctly.</p>
+                                <textarea class="form-control editableInput" id="ProgramDescription" data-edited="false"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-3">
+                        <div class="imageDetails card SameHeight">
+                            <div class="card-body">
+                                <div class="item"><img src="../assets/images/Page-ProgramDetails/1.png" alt="Image 1"></div>
+                                <div class="item"><img src="../assets/images/Page-ProgramDetails/2.png" alt="Image 2"></div>
+                                <div class="item"><img src="../assets/images/Page-ProgramDetails/3.png" alt="Image 3"></div>
+                            </div>
+                            <div class="card-footer d-grid gap-3">
+                                <a href="#" class="btn Edit"><i class="fa-regular fa-circle-plus"></i><span>Add</span></a>
+                                <a href="#" class="btn Delete"><i class="fa-regular fa-trash-can"></i><span>Delete</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ProgramBody">
+                    <div class="col-md-12">
+                        <div class="tabs">
+                            <ul class="tab-headers">
+                                <li class="active">Overview</li>
+                                <li>Course Content</li>
+                                <li>Schedule and Fees</li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card">
+                                            <div class="card-body position-relative z-0">
+                                                <div class="tab-pane active">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="d-flex gap-1 justify-content-end">
+                                                                <a href="#" class="btn Edit active"><i class="fa-solid fa-pen"></i><span>Edit</span></a>
+                                                                <a href="#" class="btn Show"><i class="fa-solid fa-eye"></i><span>View</span></a>
+                                                            </div>
+                                                            <div class="group">
+                                                                <h4>Methodology:</h4>
+                                                                <p class="editableText active">The consultant presents a presentation and examples. Participants are asked to perform exercises on the payroll and benefits Excel program, in addition to group workshops and presentations.</p>
+                                                            </div>
+                                                            <div class="group">
+                                                                <h4>Course Objectives:</h4>
+                                                                <h5>Participants in the course will be able to:</h5>
+                                                                <ul class="d-flex column-gap-5 flex-wrap m-0 p-0 editableText active">
+                                                                    <li>Understand the tasks of human resources, accounting, and finance and how to contribute to their success.</li>
+                                                                    <li>Prepare and review monthly salaries accurately.</li>
+                                                                    <li>Calculate employee returns, loans, vacations, and end-of-service benefits.</li>
+                                                                    <li>Prepare monthly and annual salary budgets.</li>
+                                                                    <li>Match payroll records and audit supporting documents for payment.</li>
+                                                                    <li>Design periodic reports for payroll management and analysis.</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="group">
+                                                                <h4>Target Audience:</h4>
+                                                                <p class="editableText active">Employees, accountants, accounting assistants, supervisors, and managers responsible for payroll, and human resources specialists interested in understanding and applying best practices related to payroll management.</p>
+                                                            </div>
+                                                            <div class="group">
+                                                                <h4>Target Competencies:</h4>
+                                                                <ul class="d-flex column-gap-5 flex-wrap m-0 p-0 editableText active">
+                                                                    <li>Monitoring all employees.</li>
+                                                                    <li>Payroll accounting and account reconciliation.</li>
+                                                                    <li>Preparing and processing salaries.</li>
+                                                                    <li>Preparing salary and expense budgets.</li>
+                                                                    <li>Analyzing salaries and preparing reports.</li>
+                                                                    <li>Balancing expense and asset accounts.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane">Content for Tab 2</div>
+                                                <div class="tab-pane">Content for Tab 3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</main>
+
+
+<footer>
+
+</footer>
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/chart.js"></script>
+<script src="../assets/js/customselect.js"></script>
+<script src="../assets/js/main.js"></script>
+<script>
+    makeSameHeight('.ProgramDetailsSubHeader')
+    CreateTabs('.tabs')
+</script>
+</body>
+</html>
