@@ -10,6 +10,7 @@
     <title>ICTCs</title>
     <link rel="stylesheet" href="../assets/css/fontawesome.css"/>
     <link rel="stylesheet" href="../assets/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css"/>
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../assets/css/bootstrap-rtl.css"/>
     <link rel="stylesheet" href="../assets/css/style.css"/>
@@ -326,6 +327,7 @@
 <script src="../assets/js/jquery.min.js"></script>
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/chart.js"></script>
+<script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="../assets/js/customselect.js"></script>
 <script src="../assets/js/DashboardCharts.js"></script>
 <script src="../assets/js/main.js"></script>
@@ -359,11 +361,11 @@
                 // this dataset is drawn on top
                 order: 1
             },],
-            labels: [ 'يناير', 'فبراير', 'مارس', 'ابريل','مايو','يونيه','يوليو','اغسطس','سبتمبر' ,'اكتوبر','نوفمبر','ديسمبر']
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
         };
         let SubscriptionsPercentageData = {
-            labels: ['نسبة الحضور', 'نسبة النجاح', 'طلبات التسجيل', 'عدد المشتركين','نسبة محايدة'],
+            labels: ['Attendance Rate', 'Success Rate', 'Registration Requests', 'Number of Subscribers', 'Neutral Rate'],
             datasets: [
                 {
                     label: 'Dataset 1',
@@ -373,7 +375,7 @@
             ]
         };
         let TrainingProgramsData = {
-            labels: ['برامج 2024', 'البرامج المميزة', 'مضاف حديثا','أحدث البرامج'],
+            labels: ['2024 Programs', 'Featured Programs', 'Recently Added', 'Latest Programs'],
             datasets: [
                 {
                     label: 'Dataset 1',
@@ -383,7 +385,7 @@
             ]
         };
         let MostRegistrationData = {
-            labels: ['الإدارة القانونية','المالية والمحاسبة','الموارد البشرية', 'التسويق والمبيعات', 'العلاقات العامة','القيادة والإدارة'],
+            labels: ['Legal Management', 'Finance and Accounting', 'Human Resources', 'Marketing and Sales', 'Public Relations', 'Leadership and Management'],
             datasets: [
                 {
                     label: 'Dataset 1',
@@ -393,7 +395,7 @@
             ]
         };
         let TrainingProgramsBarData = {
-            labels: [ 'البرامج المميزة','أحدث البرامج'],
+            labels: ['Featured Programs', 'Latest Programs'],
             datasets: [
                 {
                     label: 'Bar Dataset',
@@ -408,8 +410,8 @@
         };
         loadChart('bar','ClientsNumber',ClientsNumberData);
         loadChart('doughnut','SubscriptionsPercentage',SubscriptionsPercentageData);
-        loadChart('doughnut','TrainingPrograms',TrainingProgramsData,'البرامج التدريبية');
-        loadChart('doughnut','MostRegistration',MostRegistrationData,'الأكثر تسجيل');
+        loadChart('doughnut','TrainingPrograms',TrainingProgramsData,'Training Programs');
+        loadChart('doughnut','MostRegistration',MostRegistrationData,'The Most Registration');
         loadChart('bar','TrainingProgramsBar',TrainingProgramsBarData);
         makeSameHeight('.topCharts')
         makeSameHeight('.centerCharts')
