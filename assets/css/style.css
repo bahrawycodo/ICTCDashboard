@@ -287,14 +287,14 @@ header .search{width: 100%;margin-left: 20px;}
 [dir="rtl"] header .search{margin-right: 20px;margin-left: 0}
 header .search .input-group-text{background: #fff;color: #939FB4;border:none}
 header .search .input-group-text:before{content: none}
-header .search .form-control{outline: none !important;box-shadow: none !important;border:none;font-family: SansOneBook;line-height: 1;height: 34px;font-size: 1rem;color: #939FB4;padding-left: 0;padding-right:0}
+header .search .form-control{outline: none !important;box-shadow: none !important;border:none;font-family: var(--BookFont);line-height: 1;height: 34px;font-size: 1rem;color: #939FB4;padding-left: 0;padding-right:0}
 header .search .form-control::placeholder {color: #939FB4;}
 header .search .form-control::-webkit-input-placeholder {color: #939FB4;}
 header .search .form-control::-moz-placeholder {color: #939FB4;}
 header .search .form-control:-ms-input-placeholder {color: #939FB4;}
 header .search .form-control:-moz-placeholder {color: #939FB4;}
 header .LeftNav{width: 60%;display: flex;display: flex;gap: 1rem;justify-content: end;margin-bottom: 0;align-items: center;height: 100%;}
-header .LeftNav li{list-style-type: none;cursor: pointer;font-family: SansOneBook}
+header .LeftNav li{list-style-type: none;cursor: pointer;font-family: var(--BookFont)}
 header .LeftNav li:not(.profile){width: 36px;height: 36px;border-radius: 50%;background: #fff;color: #0033A0;font-size: 1rem;display: flex;justify-content: center;align-items: center;min-width: 36px;}
 header .LeftNav li.profile{background: #ECF3F6;display: flex;color: #0033A0;position: relative;border-radius: 20px;padding: 8px 10px;align-items: center;gap: 0.5rem;font-size: 0.7rem;font-weight: bold;padding-left: 20px;line-height: 1;}
 
@@ -322,7 +322,7 @@ aside{background: #fff;padding-right: 0 !important;padding-left: 0 !important;ov
 }
 aside.notActive{transform: translateX(100%);}
 aside ul li{list-style-type: none;}
-aside ul li a{text-decoration: none;color:#61748F;font-size: 0.8rem;display: flex;gap: 0.5rem;font-family: SansOneBold;padding: 15px;position: relative;margin: 10px 0;transition: 0.3s ease-in-out;}
+aside ul li a{text-decoration: none;color:#61748F;font-size: 0.8rem;display: flex;gap: 0.5rem;font-family: var(--BoldFont);padding: 15px;position: relative;margin: 10px 0;transition: 0.3s ease-in-out;}
 aside ul li a span{}
 aside> ul> li> a.active,aside> ul> li.active> a,aside> ul> li> a:hover{color:#0033A0;background: #E5EEFF}
 aside >ul >li >a:after{content:""; width: 5px; height: 100%; position: absolute;background: transparent;display: block;top: 0; right: 0;transition: 0.3s ease-in-out}
@@ -334,7 +334,7 @@ aside ul li.active ul{display:block;-webkit-animation: fadeIn 1000ms;animation: 
 aside ul li.hasSubmenu a{margin-bottom: 0;position: relative}
 aside ul li.hasSubmenu> a:before{ content: "\f107";font-family: "Font Awesome 6 Pro";position: absolute;top: 0;right: 10px;left: auto;display: flex;align-items: center;height: 100%;font-weight: bold;}
 [dir="rtl"] aside ul li.hasSubmenu a:before{ right: auto;left: 10px;}
-aside ul li ul li a{margin: 0;transition: 0.3s ease-in-out;font-family: SansOneBook}
+aside ul li ul li a{margin: 0;transition: 0.3s ease-in-out;font-family: var(--BookFont)}
 aside ul li ul li a.active,aside ul li ul li a:hover{color: #3BC0C0}
 aside ul li.hasSubmenu.active a:before{transform: rotate(180deg);}
 /* End Sidebar */
@@ -356,16 +356,16 @@ main .content{padding: 20px;position: relative;margin-right: auto;transition: al
 .DashboardCounters .card .card-body{display: flex;gap: 10px}
 .DashboardCounters .card .card-body .icon{width: 50px;height: 50px;background: #fff;border-radius: 7px;color: #39C0C0;font-size: 1.6rem;display: flex;align-items: center;justify-content: center;}
 .DashboardCounters .card .card-body .details{display: flex;flex-direction: column;gap: 10px;}
-.DashboardCounters .card .card-body .details h4{font-family: SansOneBook;font-size: 0.8rem;color: #fff;margin-bottom: 0;}
-.DashboardCounters .card .card-body .details span{font-family: SansOneBold;font-size: 2rem;color: #39C0C0;line-height: 1;}
+.DashboardCounters .card .card-body .details h4{font-family: var(--BookFont);font-size: 0.8rem;color: #fff;margin-bottom: 0;}
+.DashboardCounters .card .card-body .details span{font-family: var(--BoldFont);font-size: 2rem;color: #39C0C0;line-height: 1;}
 .DashboardCounters .card .card-footer{border: 0;padding-top: 0;background: transparent;display: flex;justify-content: end;height: 30px;}
-.DashboardCounters .card .card-footer a{color: #fff;font-family: SansOneBook;font-size: 0.8rem}
+.DashboardCounters .card .card-footer a{color: #fff;font-family: var(--BookFont);font-size: 0.8rem}
 /* End Dashboard Counters */
 
 /* Start Clients Number */
 .ClientsNumberContainer,.SubscriptionsPercentageContainer,.TrainingProgramsContainer,.MostRegistrationContainer,.SubscriptionTable{--bs-card-inner-border-radius:15px;--bs-border-radius:15px;border: 2px solid #CACACC;margin-bottom: 20px;}
 .ClientsNumberContainer .card-header{--bs-card-cap-padding-y:1rem;--bs-card-cap-padding-x:1.4rem;background: transparent;border: none}
-.ClientsNumberContainer .card-title{font-family: SansOneBold;font-size: 1rem;color: #0033A0;margin-bottom: 0;}
+.ClientsNumberContainer .card-title{font-family: var(--BoldFont);font-size: 1rem;color: #0033A0;margin-bottom: 0;}
 .ClientsNumberContainer .card-body{padding-top: 0;}
 #ClientsNumber,#SubscriptionsPercentage,#TrainingPrograms,#MostRegistration{width: 80%;margin: auto;max-width: 300px;}
 #ClientsNumber{max-width: initial;width: 100%;}
@@ -373,18 +373,18 @@ main .content{padding: 20px;position: relative;margin-right: auto;transition: al
 .ClientsNumberContainer #ClientsNumberNav li{list-style-type: none;display: flex;flex-direction: column;justify-content: center;text-align: center;border: 1px dashed #000;padding: 15px;gap: 0.3rem;width: calc((100% - 33%) /3);}
 .ClientsNumberContainer #ClientsNumberNav li .CNumber{color: #000;font-size: 1.1rem;font-family: MyRiadpro}
 .ClientsNumberContainer #ClientsNumberNav li.active .CNumber{color: #39C0C0;font-weight: bold;}
-.ClientsNumberContainer #ClientsNumberNav li .CTitle{color: #8E8F9F;font-family: SansOneBook;font-size: 0.8rem}
+.ClientsNumberContainer #ClientsNumberNav li .CTitle{color: #8E8F9F;font-family: var(--BookFont);font-size: 0.8rem}
 .ClientsNumberContainer #ClientsNumberNav li:last-child {width: 33%}
 .ClientsNumberContainer #ClientsNumberNav li:not(:last-child){border-left: 0}
 /* End Clients Number */
 
 /* Start Subscription Percentage */
 .SubscriptionsPercentageContainer .card-header{--bs-card-cap-padding-y:1rem;--bs-card-cap-padding-x:1.4rem;background: transparent;text-align: center}
-.SubscriptionsPercentageContainer .card-header .card-title{color: #7E828A;font-family: SansOneBold;font-size: 1rem;margin-bottom: 0;}
+.SubscriptionsPercentageContainer .card-header .card-title{color: #7E828A;font-family: var(--BoldFont);font-size: 1rem;margin-bottom: 0;}
 .SubscriptionsPercentageContainer .PercentageProgressBars{margin-top: 15px}
 .SubscriptionsPercentageContainer .PercentageProgressBars .PercentageContainer{margin-bottom: 15px}
 .SubscriptionsPercentageContainer .PercentageProgressBars .PercentageContainer .PercentageTitle{display: flex;justify-content: space-between}
-.SubscriptionsPercentageContainer .PercentageProgressBars .PercentageContainer .PercentageTitle span{font-family: SansOneBook;font-size: 1rem}
+.SubscriptionsPercentageContainer .PercentageProgressBars .PercentageContainer .PercentageTitle span{font-family: var(--BookFont);font-size: 1rem}
 .SubscriptionsPercentageContainer .PercentageProgressBars .PercentageContainer .Percentage{height: 10px;border-radius: 10px;background: #EFF2F7;position: relative}
 .SubscriptionsPercentageContainer .PercentageProgressBars .PercentageContainer .Percentage:before{content: "";position: absolute;height: 100%;width: var(--percentage);background-color: #39C0C0;border-radius: 10px;background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
     background-size: 0.625rem 0.625rem;}
@@ -393,14 +393,14 @@ main .content{padding: 20px;position: relative;margin-right: auto;transition: al
 /* Start Training Programs */
 .WidthListColors{padding: 20px 10px}
 .WidthListColors  ul{display: grid;grid-template-columns: repeat(var(--LiRowCount), 1fr);margin-bottom: 0;text-align: center;gap: 1rem;}
-.WidthListColors ul li{list-style-type: none;font-family: SansOneBook;font-size: 0.6rem;font-weight: bold;position: relative;display:flex;line-height: normal;}
+.WidthListColors ul li{list-style-type: none;font-family: var(--BookFont);font-size: 0.6rem;font-weight: bold;position: relative;display:flex;line-height: normal;}
 .WidthListColors ul li:before{content: "";width: 15px;height:15px;border-radius: 2px;background: var(--Back);margin-left: 5px;display: inline-block;min-width: 15px;}
 /* End Training Programs */
 /* Start Subscription Table */
 .SubscriptionTable .filterContainer .customSelect .cp span> i,.SubscriptionTable .filterContainer .customSelect .cp span> .mainText span:not(.b){/*! display: none; */}
 .SubscriptionTable .filterContainer .customSelect .cp span> .mainText span{ padding: 0px 15px;}
 .SubscriptionTable .filterContainer .customSelect .cp span> .mainText{display: flex}
-.SubscriptionTable .filterContainer .customSelect .cp span> .mainText span:not(.b){font-family: SansOneBook;color: #fff;background: #0033A0;font-size: 0.8rem;   width: 90%;text-align: center;}
+.SubscriptionTable .filterContainer .customSelect .cp span> .mainText span:not(.b){font-family: var(--BookFont);color: #fff;background: #0033A0;font-size: 0.8rem;   width: 90%;text-align: center;}
 .SubscriptionTable .filterContainer .customSelect {
     position: relative;
     width: 100%;
@@ -480,20 +480,20 @@ main .content{padding: 20px;position: relative;margin-right: auto;transition: al
 .SubscriptionTable .filterContainer {padding: 10px 15px}
 .SubscriptionTable .card-body{padding: 0}
 .filterContainer .input-group{background: #E3EBEF;border-radius: 5px;}
-.filterContainer .input-group .form-control{background: transparent;border: 0;color: #3F434B;box-shadow: none !important;outline: none;font-family: SansOneBook;font-size: 0.8rem;}
+.filterContainer .input-group .form-control{background: transparent;border: 0;color: #3F434B;box-shadow: none !important;outline: none;font-family: var(--BookFont);font-size: 0.8rem;}
 .filterContainer .input-group .btn{border: 0;color: #0335A0}
-.filterContainer .TableLength{display: flex;font-family: SansOneBook;color: #fff;background: #0033A0;font-size: 0.8rem}
+.filterContainer .TableLength{display: flex;font-family: var(--BookFont);color: #fff;background: #0033A0;font-size: 0.8rem}
 .SubscriptionTable .tableContainer .table{text-align: center;margin-bottom: 0;}
-.SubscriptionTable .tableContainer .table thead tr th{background: #0033A0;color: #fff;font-size: 0.8rem;font-family: SansOneBold;font-weight: normal}
-.SubscriptionTable .tableContainer .table tbody tr td{background: #fff;color: #44484F;font-size: 0.8rem;font-family: SansOneBook}
+.SubscriptionTable .tableContainer .table thead tr th{background: #0033A0;color: #fff;font-size: 0.8rem;font-family: var(--BoldFont);font-weight: normal}
+.SubscriptionTable .tableContainer .table tbody tr td{background: #fff;color: #44484F;font-size: 0.8rem;font-family: var(--BookFont)}
 /* End Subscription Table */
 
 /* End Dashboard Content */
 /* Start Page Header */
 .PageHeader{display: flex;justify-content: space-between;align-items: center;margin-bottom:15px;}
-.PageHeader h2{font-family: SansOneBold;font-size: 1rem;color:#0033A0;margin-bottom: 0;}
+.PageHeader h2{font-family: var(--BoldFont);font-size: 1rem;color:#0033A0;margin-bottom: 0;}
 .PageHeader .PageHeaderLinks{display: flex;gap: 1rem}
-.PageHeader .PageHeaderLinks .btn{font-family: SansOneBold;font-size: 0.8rem;line-height: normal;--bs-border-radius: 0.5rem;min-width: 100px;}
+.PageHeader .PageHeaderLinks .btn{font-family: var(--BoldFont);font-size: 0.8rem;line-height: normal;--bs-border-radius: 0.5rem;min-width: 100px;}
 .PageHeader .PageHeaderLinks .PrimaryBtn{background: #0033A0;color: #fff;}
 .PageHeader .PageHeaderLinks .GrayBtn{background: transparent;color: #ACB2B8;border: 2px solid #ACB2B8}
 .PageHeader .PageHeaderLinks .SecondaryBtn{color: #270F04; background: rgb(243,119,68);background: linear-gradient(90deg, rgba(243,119,68,1) 0%, rgba(249,173,67,1) 100%); border: 0;}
@@ -637,7 +637,7 @@ main .content{padding: 20px;position: relative;margin-right: auto;transition: al
     border-bottom: 0;
 }
 .form-control.input{
-    font-family:SansOneBook ;
+    font-family:var(--BookFont) ;
     border: 2px solid #CED4DA;
     box-shadow:none;
     padding: .45rem .75rem;
@@ -1048,17 +1048,17 @@ textarea.form-control.input{min-height: 90px}
 /* Start Home Page */
 .WithBottomBorder{position: relative}
 .WithBottomBorder:after{position: absolute;content: "";height: 1px;width: calc(100% + 16px);right: -8px;left: -8px;bottom:0;background: #BABABA}
-.custom-file-input {font-family: SansOneBook;font-size: 0.8rem;cursor: pointer}
+.custom-file-input {font-family: var(--BookFont);font-size: 0.8rem;cursor: pointer}
 .custom-file-input .FileGroup{display: flex;}
 .custom-file-input .fileName{border: 2px solid #CED4DA;border-radius: 0 10px 10px 0;color: #4B4B4B;background: #fff;padding: 10px 15px;width:calc(100% - 110px)}
 .custom-file-input .chooseFile{border-radius: 10px 0 0 10px;background: #EFF2F7;padding: 10px 15px;width: 110px;text-align: center}
 .custom-file-input2{background: #C8CCD8;border: 2px solid #D1D7DD;border-radius: 10px;width: 100%;height: 50px;cursor:pointer;overflow: hidden;max-width: 120px;}
 .custom-file-input2 .FileGroup{display: flex;flex-direction: column;gap: 0.5rem;height: 100%;align-items: center;justify-content: center;}
 .custom-file-input2 .FileGroup i{color: #646C7A;font-size: 1.6rem;}
-.custom-file-input2 .FileGroup span{color: #3D3D3E;font-family:SansOneBook ;font-size: 0.8rem}
+.custom-file-input2 .FileGroup span{color: #3D3D3E;font-family:var(--BookFont) ;font-size: 0.8rem}
 .custom-file-input2 img{width: 100%;height: 100%}
-.CenterMessageContainer .ImageContainer> span{color: #383839;font-family: SansOneBook;display: block;margin-bottom: 10px;font-size:0.9rem}
-.CenterMessageContainer .ImageContainer p{color: #323232;font-family: SansOneBook;font-size: 0.8rem;margin-bottom: 10px}
+.CenterMessageContainer .ImageContainer> span{color: #383839;font-family: var(--BookFont);display: block;margin-bottom: 10px;font-size:0.9rem}
+.CenterMessageContainer .ImageContainer p{color: #323232;font-family: var(--BookFont);font-size: 0.8rem;margin-bottom: 10px}
 .CenterMessageContainer .CenterMessage{background: #fff;border-radius: 15px;min-height: 120px;resize:vertical;}
 
 .ImagesScrolledSlider{background: #fff;border-radius: 10px;padding:15px;/*! display: flex; *//*! overflow-x: auto; */}
@@ -1069,12 +1069,12 @@ textarea.form-control.input{min-height: 90px}
 .mCS-dark-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background: #0033A0 !important;height: 5px;}
 .SiteLogoContainer .ImageContainer img{width: 100%;border: 2px solid #BABABA;border-radius: 20px;background: #F5FCFF;min-height: 70px;max-width: 120px;}
 .SiteLogoContainer .fileUploadContainer{padding: 0 3%;}
-.SiteLogoContainer .fileUploadContainer h3{font-family: SansOneBold;font-size: 1rem;color: #323232}
-.SiteLogoContainer .fileUploadContainer p{font-family: SansOneBook;font-size: 0.9rem;color: #5C6177}
-.form-label{color:#5C6177;font-family: SansOneBold;font-size: 0.8rem}
+.SiteLogoContainer .fileUploadContainer h3{font-family: var(--BoldFont);font-size: 1rem;color: #323232}
+.SiteLogoContainer .fileUploadContainer p{font-family: var(--BookFont);font-size: 0.9rem;color: #5C6177}
+.form-label{color:#5C6177;font-family: var(--BoldFont);font-size: 0.8rem}
 .Home .footer{background: #0033A0;padding-top: 40px; padding-bottom: 30px;border-radius: 0 0 25px 25px;margin-right: -20px;width: calc(100% + 40px);margin-left: -20px;padding: 40px 20px 30px 20px;}
 .Home .footer > .col-md-12{padding: 0}
-.Home .footer .footer-title{position: absolute;top: -25px;right: 50%;transform: translateX(50%);border: 2px solid #CACACC;border-radius: 20px;background: #fff;font-family: SansOneBold;font-size: 1rem;color: #5C6177;padding: 10px 20px;z-index: 1;}
+.Home .footer .footer-title{position: absolute;top: -25px;right: 50%;transform: translateX(50%);border: 2px solid #CACACC;border-radius: 20px;background: #fff;font-family: var(--BoldFont);font-size: 1rem;color: #5C6177;padding: 10px 20px;z-index: 1;}
 @media(max-width:767px){.Home .footer .footer-title{font-size: 0.8rem;}}
 .footer .SocialLinks .input-group{border-radius: 30px  10px 10px 30px;background: #fff;padding: 5px;margin-bottom: 15px;border: 2px solid #CECED0}
 .footer .SocialLinks .input-group .input-group-text:before{content: none}
