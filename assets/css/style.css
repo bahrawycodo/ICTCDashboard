@@ -843,7 +843,7 @@ textarea.form-control.input{min-height: 90px}
     --bs-btn-hover-border-color: #FEC45D;
     font-family: var(--BoldFont);
 }
-.btn.Edit{
+.btn.primary,.btn.Edit{
     background: #EBEEFD;
     color: #4095D7;
     --bs-btn-border-color: #4095D7;
