@@ -420,6 +420,15 @@
 <script>
     makeSameHeight('.ProgramDetailsSubHeader')
     CreateTabs('.tabs')
+    $(document).ready(function (){
+        $(".ProgramDetailsSubHeader").on("click",".btn.Edit, .btn.Show",function (e){
+            e.preventDefault();
+            $(".ProgramDetailsSubHeader .card-header,.ProgramDetailsSubHeader .card-body").children().toggleClass("active");
+        })
+        $(".ProgramDetailsSubHeader .editableInput").on('input change',function (){
+            $(this).siblings(".editableText").text($(this).val())
+        })
+    })
     $(document).ready(function () {
         $('.CourseContent').toggleEditMode();
         const $courseContent =$('.CourseContent').courseManager({

@@ -881,7 +881,7 @@ textarea.form-control.input{min-height: 90px}
 .ProgramDetailsSubHeader .imageDetails .card-footer .btn{padding: 5px}
 .editableInput, .editableText, .ProgramDetailsSubHeader .btn:not(.imageDetails .btn):not(.active), .ProgramBody .btn{display: none}
 .editableInput.active,.editableText.active{display: block}
-.ProgramDetailsSubHeader .btn.active,.ProgramBody .btn.active,.ProgramBody .table .btn,.ProgramBody .editSection .btn{display: flex}
+.ProgramDetailsSubHeader .btn.active,.ProgramBody .btn.active,.ProgramBody .table .btn,.ProgramBody .editSection .btn{display: flex;height: fit-content;}
 .ProgramBody .tabs .tab-headers{display: flex;margin-bottom: 15px;flex-wrap: wrap;align-items: self-end;gap: 1rem}
 .ProgramBody .tabs .tab-headers li {
     cursor: pointer;
