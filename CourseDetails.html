@@ -125,21 +125,23 @@
                                     <div class="col-md-12">
                                         <div class="card">
                                             <div class="card-body position-relative z-0">
-                                                <div class="tab-pane active">
+                                                <div class="tab-pane active OverviewSection">
                                                     <div class="row">
                                                         <div class="col-md-12">
                                                             <div class="d-flex gap-1 justify-content-end">
                                                                 <a href="#" class="btn Edit active"><i class="fa-solid fa-pen"></i><span>تعديل</span></a>
                                                                 <a href="#" class="btn Show"><i class="fa-solid fa-eye"></i><span>عرض</span></a>
                                                             </div>
+                                                        </div>
+                                                        <div class="col-md-12 originalContent">
                                                             <div class="group">
                                                                 <h4>المنهجية:</h4>
-                                                                <p class="editableText active">يقدم المستشار عرضا تقديميا وأمثلة. ويطلب من المشاركين القيام بتمارين على برنامج إكسل للرواتب والمزايا, بالإضافة إلي ورش العمل الجماعية والعروض التقديمية .</p>
+                                                                <p class="methodology" >يقدم المستشار عرضا تقديميا وأمثلة. ويطلب من المشاركين القيام بتمارين على برنامج إكسل للرواتب والمزايا, بالإضافة إلي ورش العمل الجماعية والعروض التقديمية .</p>
                                                             </div>
                                                             <div class="group">
                                                                 <h4>أهداف الدورة:</h4>
                                                                 <h5>سيتمكن المشاركون في الدورة من:</h5>
-                                                                <ul class="d-flex column-gap-5 flex-wrap m-0 p-0 editableText active">
+                                                                <ul class="d-flex column-gap-5 flex-wrap m-0 p-0 CourseGoals">
                                                                     <li>فهم مهام الموارد البشرية والمحاسبة والمالية وكيفية المساهمة في نجاحها .</li>
                                                                     <li>إعداد الرواتب الشهرية ومراجعتها بدقة .</li>
                                                                     <li>احتساب عوائد الموظفين وقروضهم واجازاتهم ومكافأة نهاية خدمتهم .</li>
@@ -150,11 +152,11 @@
                                                             </div>
                                                             <div class="group">
                                                                 <h4>الفئات المستهدفة:</h4>
-                                                                <p class="editableText active">الموظفون والمحاسبون ومساعدو المحاسبين والشرفون والمدراء المسؤولون عن الرواتب, وأخصائيو الموارد البشرية المهتمون في فهم وتطبيق أفضل الممارسات المتعلقة بإدارة قسم الرواتب .</p>
+                                                                <p class="TargetGroups">الموظفون والمحاسبون ومساعدو المحاسبين والشرفون والمدراء المسؤولون عن الرواتب, وأخصائيو الموارد البشرية المهتمون في فهم وتطبيق أفضل الممارسات المتعلقة بإدارة قسم الرواتب .</p>
                                                             </div>
                                                             <div class="group">
                                                                 <h4>الكفاءات المستهدفة:</h4>
-                                                                <ul class="d-flex column-gap-5 flex-wrap m-0 p-0 editableText active">
+                                                                <ul class="d-flex column-gap-5 flex-wrap m-0 p-0 TargetCompetencies">
                                                                     <li>مراقبة كافة الموظفين .</li>
                                                                     <li>محاسبة الرواتب وتسوية الحسابات .</li>
                                                                     <li>إعداد وتحضير الرواتب .</li>
@@ -163,11 +165,228 @@
                                                                     <li>موازنة قسم المصاريف والاصول .</li>
                                                                 </ul>
                                                             </div>
+                                                        </div>
+                                                        <div class="col-md-12 editSection d-none">
+                                                            <div class="group">
+                                                                <h4>المنهجية:</h4>
+                                                                <input class="form-control item-input methodology" >
+                                                            </div>
+                                                            <div class="group">
+                                                                <h4>أهداف الدورة:</h4>
+                                                                <h5>سيتمكن المشاركون في الدورة من:</h5>
+                                                                <button class="btn btn-primary addCourseGoal mb-2">اضف عنصر</button>
+                                                                <table class="table table-bordered">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>النص</th>
+                                                                            <th>حذف</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody class="CourseGoals">
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </div>
+                                                            <div class="group">
+                                                                <h4>الفئات المستهدفة:</h4>
+                                                                <input class="form-control item-input TargetGroups" >
+                                                            </div>
+                                                            <div class="group">
+                                                                <h4>الكفاءات المستهدفة:</h4>
+                                                                <button class="btn btn-primary addCourseTarget mb-2">اضف عنصر</button>
+
+                                                                <table class="table table-bordered">
+                                                                    <thead>
+                                                                    <tr>
+                                                                        <th>النص</th>
+                                                                        <th>حذف</th>
+                                                                    </tr>
+                                                                    </thead>
+                                                                    <tbody class="TargetCompetencies">
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </div>
 
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="tab-pane">Content for Tab 2</div>
+                                                <div class="tab-pane CourseContent">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="d-flex gap-1 justify-content-end">
+                                                                <a href="#" class="btn Edit active"><i class="fa-solid fa-pen"></i><span>تعديل</span></a>
+                                                                <a href="#" class="btn Show"><i class="fa-solid fa-eye"></i><span>عرض</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row originalContent">
+                                                        <div class="col-md-6">
+                                                                <div class="group full">
+                                                                    <h4>مقدمة في التحليل المالي المتقدم </h4>
+                                                                    <ul class="d-flex column-gap-5 flex-wrap m-0 p-0">
+                                                                        <li>مستخدمو البيانات المالية</li>
+                                                                        <li>محتوى التقرير المالي السنوي
+                                                                            <ul>
+                                                                                <li>
+                                                                                    المعايير الإقليمية مقابل المعايير العالمية
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>العناصر الغير المالية في التقرير المالي السنوي وأهميتها
+                                                                            <ul>
+                                                                                <li>
+                                                                                    التحيّزات العاطفية والمعرفية التي تؤثر على أحكام المحللين
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>فهم بيان الدخل والميزانية العمومية وبيان التدفق النقدي
+                                                                        </li>
+                                                                        <li>مكونات الدخل الشامل اللآخر
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        <div class="col-md-6">
+                                                                <div class="group full">
+                                                                    <h4>تقييم جودة التقارير المالية</h4>
+                                                                    <ul class="d-flex column-gap-5 flex-wrap m-0 p-0">
+                                                                        <li>إطار عمل تقييم مستوى جودة التقارير المالية للشركة</li>
+                                                                        <li>المشاكل المحتملة التي تؤثر على جودة التقارير المالية</li>
+                                                                        <li>نموذج بنيش: درجة -M لوصف درجة التلاعب بالأرباح</li>
+                                                                        <li>تقييم جودة الأرباح للشركة</li>
+                                                                        <li>تقييم جودة التدفقات النقدية للشركة</li>
+                                                                        <li>مؤشرات جودة الميزانية العمومية</li>
+                                                                        <li>مصادر المعلومات عن المخاطر</li>
+                                                                        <li>دراسة حالة: اتخاذ القرارات الاستثمارية في شركة نستله</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        <div class="col-md-6">
+                                                                <div class="group full">
+                                                                    <h4>أساسيات تحليل القطاعات وتحليل النسب المالية باستخدام برنامج الإكسل</h4>
+                                                                    <ul class="d-flex column-gap-5 flex-wrap m-0 p-0">
+                                                                        <li>منهجية التحليل من الأعلى – للأسفل
+                                                                            <ul>
+                                                                                <li>عوامل الاقتصاد الكلي لتقييم المخاطر الائتمانية</li>
+                                                                                <li>مؤشرات الناتج المحلي الإجمالي ومعدلات البطالة والتضخم وأسعار الفائدة</li>
+                                                                                <li>العجز من الناتج المحلي الإجمالي، الديون من الناتج المحلي الإجمالي، ومعدلات نمو الناتج المحلي الإجمالي</li>
+                                                                                <li>تحليل القطاع: فهم القوى الخمس لمايكل بورتر لتشكيل ربحية القطاع على المدى الطويل</li>
+                                                                                <li>دراسة حالات شركات: ستاربكس، أبل إنك، نايك، ماكدونالدز</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>تحليل الحجم المشترك لتحسين قابلية المقارنة</li>
+                                                                        <li>حساب الاتجاهات وأنماط النمو</li>
+                                                                        <li>تحليل النسب لتقييم الجوانب الرئيسة لأداء الشركة
+                                                                            <ul>
+                                                                                <li>الربحية</li>
+                                                                                <li>السيولة</li>
+                                                                                <li>الكفاءة وإدارة رأس المال العامل</li>
+                                                                                <li>المخاطر والهيكل المالي</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>نتيجة ألتمان Z- لتقييم احتمالية الإفلاس</li>
+                                                                        <li>استخدام التمثيل البياني</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        <div class="col-md-6">
+                                                                <div class="group full">
+                                                                    <h4>تقنيات التنبؤ المالي للمحللين</h4>
+                                                                    <ul class="d-flex column-gap-5 flex-wrap m-0 p-0">
+                                                                        <li>تنبّؤ الإيرادات: منهجية من الأسفل للأعلى مقابل من الأعلى للأسفل</li>
+                                                                        <li>تنبؤ تكاليف البضائع المباعة</li>
+                                                                        <li>تنبؤ التكاليف الثابتة والمتغيّرة</li>
+                                                                        <li>تنبؤ حسابات الميزانية العمومية:
+                                                                            <ul>
+                                                                                <li>باستخدام متوسط فترة تحصيل الذمم المدينة</li>
+                                                                                <li>باستخدام متوسط أيام توفّر المخزون</li>
+                                                                                <li>باستخدام متوسط فترة تسديد الذمم الدائنة</li>
+                                                                                <li>توقع رصيد الأصول الثابتة</li>
+                                                                                <li>سياسة الأرباح المحتجزة وتوزيعات الأرباح</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>وضع تنبؤ لثلاث سنوات لشركة جونسون أند جونسون</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        <div class="col-md-6">
+                                                                <div class="group full">
+                                                                    <h4>تجميل البيانات المالية والمحاسبة الإبداعية</h4>
+                                                                    <ul class="d-flex column-gap-5 flex-wrap m-0 p-0">
+                                                                        <li>إشارات للقراءة من أرصدة المخزون</li>
+                                                                        <li>تصفية المخزون بحسب الوارد آخرا صادر أولاً</li>
+                                                                        <li>قياس المخزون بالقيمة الاستردادية الصافية: البحث عن إشارات للمخزون المتقادم</li>
+                                                                        <li>نظرة المحللين عند فحص المخزون</li>
+                                                                        <li>تقييم مدى تأثير رسملة التكاليف مقابل تسجيلها كنفقات على النسب والبيانات المالية
+                                                                            <ul>
+                                                                                <li>رسملة تكاليف الفائدة</li>
+                                                                                <li>رسملة تكاليف البحث والتطوير</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>تأثير طرق الاستهلاك المختلفة على البيانات المالية</li>
+                                                                        <li>انخفاض قيمة الأصول طويلة الأجل</li>
+                                                                        <li>إعادة تقييم الأصول طويلة الأجل</li>
+                                                                        <li>اختيار التأجير التشغيلي أو التأجير التمويلي</li>
+                                                                        <li>استخدام الشركات ذات الأغراض الخاصة لمعالجة الميزانية العمومية</li>
+                                                                        <li>خيارات الأسهم ومنح الأسهم بدلاً من المكافآت</li>
+                                                                        <li>دراسة حالة: فضائح المحاسبة الإبداعية في شركات إنرون، ورلدكوم، وبارمالات</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                    <div class="row editSection d-none">
+                                                        <div class="col-md-12 section mb-3">
+                                                            <div class="card box-shadow-0 border-1">
+                                                                <div class="card-header">
+                                                                    <div class="row">
+                                                                        <div class="col-md-8">
+                                                                            <input type="text" class="form-control section-header" value="Section" placeholder="ادخل اسم السيكشن">
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="d-flex gap-2">
+                                                                                <button class="btn btn-primary addSectionItem">اضف سيكشن جديد</button>
+                                                                                <button class="btn btn-info addItem">اضف عنصر</button>
+                                                                                <button class="btn btn-danger removeSection">حذف السيكشن</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <table class="table table-bordered">
+                                                                                <thead>
+                                                                                <tr>
+                                                                                    <th>نص العنصر</th>
+                                                                                    <th>الحدث</th>
+                                                                                    <th colspan="2">العناصر الفرعية</th>
+                                                                                </tr>
+                                                                                </thead>
+                                                                                <tbody class="editableList">
+                                                                                <tr>
+                                                                                    <td><input type="text" class="form-control item-input" ></td>
+                                                                                    <td>
+                                                                                        <div class="d-flex gap-1">
+                                                                                            <button class="btn btn-secondary addSubItem">اضف عنصر فرعي</button>
+                                                                                            <button class="btn btn-danger removeItem">حذف</button>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td colspan="2"></td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="tab-pane">Content for Tab 3</div>
                                             </div>
                                         </div>
@@ -194,10 +413,109 @@
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/chart.js"></script>
 <script src="assets/js/customselect.js"></script>
+<script src="assets/js/toggleEditMode.js"></script>
+<script src="assets/js/CourseOverview.js"></script>
+<script src="assets/js/CourseManager.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
     makeSameHeight('.ProgramDetailsSubHeader')
     CreateTabs('.tabs')
+    $(document).ready(function () {
+        $('.CourseContent').toggleEditMode();
+        const $courseContent =$('.CourseContent').courseManager({
+            data: [
+                {
+                    header: 'مقدمة في التحليل المالي المتقدم',
+                    rows: [
+                        { text: 'مستخدمو البيانات المالية', subItems: [] },
+                        {
+                            text: 'محتوى التقرير المالي السنوي',
+                            subItems: [
+                                { text: 'المعايير الإقليمية مقابل المعايير العالمية' }
+                            ]
+                        },
+                        {
+                            text: 'العناصر الغير المالية في التقرير المالي السنوي وأهميتها',
+                            subItems: [
+                                { text: 'التحيّزات العاطفية والمعرفية التي تؤثر على أحكام المحللين' }
+                            ]
+                        },
+                        { text: 'فهم بيان الدخل والميزانية العمومية وبيان التدفق النقدي', subItems: [] },
+                        { text: 'مكونات الدخل الشامل اللآخر', subItems: [] }
+                    ]
+                },
+                {
+                    header: 'تقييم جودة التقارير المالية',
+                    rows: [
+                        { text: 'إطار عمل تقييم مستوى جودة التقارير المالية للشركة', subItems: [] },
+                        { text: 'المشاكل المحتملة التي تؤثر على جودة التقارير المالية', subItems: [] },
+                        { text: 'نموذج بنيش: درجة -M لوصف درجة التلاعب بالأرباح', subItems: [] },
+                        { text: 'تقييم جودة الأرباح للشركة', subItems: [] },
+                        { text: 'تقييم جودة التدفقات النقدية للشركة', subItems: [] },
+                        { text: 'مؤشرات جودة الميزانية العمومية', subItems: [] },
+                        { text: 'مصادر المعلومات عن المخاطر', subItems: [] },
+                        { text: 'دراسة حالة: اتخاذ القرارات الاستثمارية في شركة نستله', subItems: [] }
+                    ]
+                },
+                {
+                    header: 'أساسيات تحليل القطاعات وتحليل النسب المالية باستخدام برنامج الإكسل',
+                    rows: [
+                        {
+                            text: 'منهجية التحليل من الأعلى – للأسفل',
+                            subItems: [
+                                { text: 'عوامل الاقتصاد الكلي لتقييم المخاطر الائتمانية' },
+                                { text: 'مؤشرات الناتج المحلي الإجمالي ومعدلات البطالة والتضخم وأسعار الفائدة' },
+                                { text: 'العجز من الناتج المحلي الإجمالي، الديون من الناتج المحلي الإجمالي، ومعدلات نمو الناتج المحلي الإجمالي' },
+                                { text: 'تحليل القطاع: فهم القوى الخمس لمايكل بورتر لتشكيل ربحية القطاع على المدى الطويل' },
+                                { text: 'دراسة حالات شركات: ستاربكس، أبل إنك، نايك، ماكدونالدز' }
+                            ]
+                        },
+                        { text: 'تحليل الحجم المشترك لتحسين قابلية المقارنة', subItems: [] },
+                        { text: 'حساب الاتجاهات وأنماط النمو', subItems: [] },
+                        {
+                            text: 'تحليل النسب لتقييم الجوانب الرئيسة لأداء الشركة',
+                            subItems: [
+                                { text: 'الربحية' },
+                                { text: 'السيولة' },
+                                { text: 'الكفاءة وإدارة رأس المال العامل' },
+                                { text: 'المخاطر والهيكل المالي' }
+                            ]
+                        },
+                        { text: 'نتيجة ألتمان Z- لتقييم احتمالية الإفلاس', subItems: [] },
+                        { text: 'استخدام التمثيل البياني', subItems: [] }
+                    ]
+                },
+            ],
+        });
+
+        $('.CourseContent').on('click','.btn.Show',function (){
+            const newContent = $courseContent.getUpdatedData();
+            console.log(newContent);
+
+        })
+    });
+    $(document).ready(function (){
+        $('.OverviewSection').toggleEditMode();
+        const $courseOverview = $('.OverviewSection').courseOverview({
+            Methodology: 'يقدم المستشار عرضا تقديميا وأمثلة. ويطلب من المشاركين القيام بتمارين على برنامج إكسل للرواتب والمزايا, بالإضافة إلي ورش العمل الجماعية والعروض التقديمية .',
+            TargetGroups:'الموظفون والمحاسبون ومساعدو المحاسبين والشرفون والمدراء المسؤولون عن الرواتب, وأخصائيو الموارد البشرية المهتمون في فهم وتطبيق أفضل الممارسات المتعلقة بإدارة قسم الرواتب .',
+            CourseGoals:[
+                'فهم مهام الموارد البشرية والمحاسبة والمالية وكيفية المساهمة في نجاحها .',
+                'إعداد الرواتب الشهرية ومراجعتها بدقة .',
+                'احتساب عوائد الموظفين وقروضهم واجازاتهم ومكافأة نهاية خدمتهم .',
+                'إعداد موازنة الرواتب الشهرية والسنوية .',
+                'مطابقة كشف الرواتب والتدقيق في المستندات المساندة للدفع .',
+                'تصميم تقارير دورية لإدارة الرواتب وتحليلها .'
+            ],
+            CourseTargets :
+        ['مراقبة كافة الموظفين .',
+            'محاسبة الرواتب وتسوية الحسابات .',
+            'إعداد وتحضير الرواتب .','اعداد موازنة الرواتب والمصاريف .'
+            ,'تخليل الرواتب وإعداد التقارير .',
+            'موازنة قسم المصاريف والاصول .'
+        ]
+    })
+    })
 </script>
 </body>
 </html>
