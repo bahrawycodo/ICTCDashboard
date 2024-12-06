@@ -145,7 +145,7 @@
             $(this).closest('td').next().append(subRow);
             renderAsList(getUpdatedData());
         });
-
+jj
         $container.on('click', '.removeCourseSubItem', function () {
             $(this).parent().remove();
             renderAsList(getUpdatedData());
